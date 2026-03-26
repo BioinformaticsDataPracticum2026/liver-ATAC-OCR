@@ -8,7 +8,7 @@
 The project involves comparing promoters and enhancers between Human and Mouse data for a specific tissue.
 
 ## Tissues Used:
-*Adrenal Gland [Alternative]*
+***Adrenal Gland [Alternative]***
 
 *Liver*
 
