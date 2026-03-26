@@ -55,3 +55,6 @@ R version *4.0 or newer* (https://cran.r-project.org/bin/macosx/base/)
 ***Nikita Rajesh (nrajesh@andrew.cmu.edu)***
 
 ***Suratha Sriram (surathas@andrew.cmu.edu)***
+
+## License:
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
