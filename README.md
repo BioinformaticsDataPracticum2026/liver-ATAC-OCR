@@ -1,7 +1,10 @@
 # Project Title: ***T***ranscription ***R***egulatory ***A***nalysis of ***C***onserved ***E***lements (***TRACE***)
 
 ![Python](https://img.shields.io/badge/python-3.10+-blue.svg)
+![NumPy](https://img.shields.io/badge/numpy-1.21+-blue.svg)
+![Matplotlib](https://img.shields.io/badge/matplotlib-3.4+-blue.svg)
 ![R](https://img.shields.io/badge/R-4.0+-blue.svg)
+![Bioconductor](https://img.shields.io/badge/Bioconductor-3.14+-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
 ## Aim:
@@ -30,9 +33,18 @@ R version *4.0 or newer* (https://cran.r-project.org/bin/macosx/base/)
 - matplotlib (https://pypi.org/project/matplotlib/)
 
 **R modules**
-- Bioconductor
+- Bioconductor (https://bioconductor.org/install/)
 
-### Modules
+## Citations:
+1. ***Liu et al. An ATAC-seq atlas of chromatin accessibility in mouse tissues. Sci Data 6, 65 (2019). (https://doi.org/10.1038/s41597-019-0071-0)***
+
+2. ***Currin et al. Genetic effects on liver chromatin accessibility identify disease regulatory variants. The American Journal of Human Genetics, 2021; 108, 1169-1189. (https://doi.org/10.1016/j.ajhg.2021.05.001)***
+
+3. ***ENCODE portal (https://www.encodeproject.org/)***
+
+4. ***rGREAT (https://github.com/jokergoo/rGREAT)***
+
+5. ***HALPER (https://github.com/pfenninglab/halLiftover-postprocessing)***
 
 ## Contributors:
 
