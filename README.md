@@ -1,5 +1,8 @@
 # Project Title: ***T***ranscription ***R***egulatory ***A***nalysis of ***C***onserved ***E***lements (***TRACE***)
 
+![Python](https://img.shields.io/badge/python-3.10+-blue.svg)
+![R](https://img.shields.io/badge/R-4.0+-blue.svg)
+
 ## Aim:
 The project involves comparing promoters and enhancers between Human and Mouse data for a specific tissue.
 
@@ -19,7 +22,7 @@ The project involves comparing promoters and enhancers between Human and Mouse d
 ## Dependencies:
 Python version *3.10 or newer* (https://www.python.org/downloads/release/python-3100/)
 
-R version *4.6 or newer* (https://cran.r-project.org/bin/macosx/base/)
+R version *4.0 or newer* (https://cran.r-project.org/bin/macosx/base/)
 
 **Python modules**
 - numpy (https://numpy.org/)
