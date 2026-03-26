@@ -48,10 +48,10 @@ R version *4.0 or newer* (https://cran.r-project.org/bin/macosx/base/)
 
 ## Contributors:
 
-***Evan Lin***
+***Evan Lin (evanlin@andrew.cmu.edu)***
 
-***Arun Sujatha Bharath Raj***
+***Arun Sujatha Bharath Raj (asujatha@andrew.cmu.edu)***
 
-***Nikita Rajesh***
+***Nikita Rajesh (nrajesh@andrew.cmu.edu)***
 
-***Suratha Sriram***
+***Suratha Sriram (surathas@andrew.cmu.edu)***
