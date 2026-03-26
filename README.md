@@ -2,6 +2,7 @@
 
 ![Python](https://img.shields.io/badge/python-3.10+-blue.svg)
 ![R](https://img.shields.io/badge/R-4.0+-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
 
 ## Aim:
 The project involves comparing promoters and enhancers between Human and Mouse data for a specific tissue.
