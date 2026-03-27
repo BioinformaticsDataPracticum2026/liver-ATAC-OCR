@@ -12,8 +12,8 @@ The aim of this analysis is to evaluate the quality of ATAC-seq data obtained fr
 4. **TSS-Enrichment Score** - Should be higher (>=10) for good quality data.
 5. **NRF (Non-Redundant Fraction)** - Should be higher (>0.8) for good quality data.
 6. **IDR (Irreproducible Discovery Rate)** - Should contain peaks that are reproducible across replicates for good quality data. Reproducible peaks = Strong peaks that are present in both replicates, and not just in one replicate. The reproducibility is measured by;
-    A. **Rescue Ratio** - Should be lower (<2) for good quality data.
-    B. **Self-consistency Ratio** - Should be lower (<2) for good quality data.
+    1. **Rescue Ratio** - Should be lower (<2) for good quality data.
+    2. **Self-consistency Ratio** - Should be lower (<2) for good quality data.
 
 ## QC Analysis Results:
 
