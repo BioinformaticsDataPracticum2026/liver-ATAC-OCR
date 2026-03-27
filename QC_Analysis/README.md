@@ -19,7 +19,7 @@ The aim of this analysis is to evaluate the quality of ATAC-seq data obtained fr
 
 | Metric | Mouse Liver Replicate 1 | Mouse Liver Replicate 2 | Human Liver Replicate 1 | Human Liver Replicate 2 | Mouse Adrenal Gland Replicate 1 | Mouse Adrenal Gland Replicate 2 | Human Adrenal Gland Replicate 1 | Human Adrenal Gland Replicate 2 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| % Mapped Reads | $\color{green}{97.8\%}$ | 97.89999999999999% | 98.9% | 98.6% | 98.5% | 98.6% | 98.5% | 98.9% |	
+| % Mapped Reads | \color{green}{97.8\%} | 97.89999999999999% | 98.9% | 98.6% | 98.5% | 98.6% | 98.5% | 98.9% |	
 | % Properly Paired Reads | 95.7% | 95.6% | 97.89999999999999% | 97.5% | ９4.6% | ９4.6９９９９９９９９９９９９% | ９７.０% | ９７.５% |
 | Periodicity Plots | 3 Clear, distinct humps | 3 Clear, distinct humps | 3 Clear, distinct humps | 3 Clear, distinct humps | 2 Clear, distinct humps | 2 Clear, distinct humps | 2 Clear and distinct humps | 2 Clear and distinct humps |
 | TSS-Enrichment Score | 7.692382151686117 | 7.354598361825624 | 23.294805448649445 | 20.962438980086663 | 18.365117628803656 | 18.997852749462098 | 26.084253634636482 | 14.011771178374902 |
