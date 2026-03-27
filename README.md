@@ -24,7 +24,7 @@ The project involves comparing promoters and enhancers between Human and Mouse d
 6. **Find transcription factors that tend to bind open chromatin regions**
 
 ### 1. Quality Control Analysis
-The analysis for quality control is explained in detail on [QC_Analysis](QC_Analysis/README.md).
+The [QC_Analysis](QC_Analysis/README.md) provides a comprehensive evaluation of the quality of the human and mouse open chromatin data. It includes assessments of read quality, mapping efficiency, and peak calling performance. The analysis ensures that the mouse and human liver ATAC-seq data are of high quality and suitable for downstream analyses.
 
 ## Dependencies:
 Python version *3.10 or newer* (https://www.python.org/downloads/release/python-3100/)
