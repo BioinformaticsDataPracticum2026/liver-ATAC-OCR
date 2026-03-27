@@ -23,6 +23,8 @@ The project involves comparing promoters and enhancers between Human and Mouse d
 5. **Comparing candidate enhancers to candidate promoters**
 6. **Find transcription factors that tend to bind open chromatin regions**
 
+### 1. Quality Control Analysis [QC_Analysis/README.md]
+
 ## Dependencies:
 Python version *3.10 or newer* (https://www.python.org/downloads/release/python-3100/)
 
