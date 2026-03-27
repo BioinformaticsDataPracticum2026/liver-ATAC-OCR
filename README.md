@@ -1,4 +1,4 @@
-# Project Title: ***T***ranscription ***R***egulatory ***A***nalysis of ***C***onserved ***E***lements (***TRACE***)
+# ***T***ranscription ***R***egulatory ***A***nalysis of ***C***onserved ***E***lements (***TRACE***)
 
 ![Python](https://img.shields.io/badge/python-3.10+-blue.svg)
 ![NumPy](https://img.shields.io/badge/numpy-1.21+-blue.svg)
