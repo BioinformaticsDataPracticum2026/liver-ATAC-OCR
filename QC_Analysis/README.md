@@ -19,14 +19,14 @@ The aim of this analysis is to evaluate the quality of ATAC-seq data obtained fr
 
 | Metric | Mouse Liver Replicate 1 | Mouse Liver Replicate 2 | Human Liver Replicate 1 | Human Liver Replicate 2 | Mouse Adrenal Gland Replicate 1 | Mouse Adrenal Gland Replicate 2 | Human Adrenal Gland Replicate 1 | Human Adrenal Gland Replicate 2 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| % Mapped Reads | $\color{green}97.8%$ | 97.89999999999999% | 98.9% | 98.6% | 98.5% | 98.6% | 98.5% | 98.9% |	
-| % Properly Paired Reads | 95.7% | 95.6% | 97.89999999999999% | 97.5% | 94.6% | 94.6999999999999% | 97.0% | 97.5% |
-| Periodicity Plots | 3 Clear, distinct humps | 3 Clear, distinct humps | 3 Clear, distinct humps | 3 Clear, distinct humps | 2 Clear, distinct humps | 2 Clear, distinct humps | 2 Clear and distinct humps | 2 Clear and distinct humps |
-| TSS-Enrichment Score | 7.692382151686117 | 7.354598361825624 | 23.294805448649445 | 20.962438980086663 | 18.365117628803656 | 18.997852749462098 | 26.084253634636482 | 14.011771178374902 |
-| NRF (Non-Redundant Fraction) | 0.935887 | 0.94404 | 0.884593 | 0.899531 | 0.301612 | 0.270462 | 0.778014 | 0.969527 |
-| Rescue Ratio | 1.0043626038838573 | 1.0122929315643505 | 1.0906310179587084 | 1.24175568252391 | 1.013263779368353 | 1.0098552058921995 | 2.0842882741797046 | 4.283663165487085|
-| Self-consistency Ratio | 1.0756982081825852 | 1.1043673083661616 | 1.2192105681999046 | 1.4284339019600292 | 1.2220589050973432 | 1.2891362811933205 | 3.6038942470169237 | 6.26995057660626 |
-| Reproducibility Test | Pass | Pass | Pass | Pass | Pass | Pass | Fail | Fail |
+| % Mapped Reads | $\color{green}97.8\%$ | $\color{green}97.89999999999999\%$ | $\color{green}98.9\%$ | $\color{green}98.6\%$ | $\color{green}98.5\%$ | $\color{green}98.6\%$ | $\color{green}98.5\%$ | $\color{green}98.9\%$ |	
+| % Properly Paired Reads | $\color{green}95.7\%$ | $\color{green}95.6\%$ | $\color{green}97.89999999999999\%$ | $\color{green}97.5\%$ | $\color{green}94.6\%$ | $\color{green}94.6999999999999\%$ | $\color{green}97.0\%$ | $\color{green}97.5\%$ |
+| Periodicity Plots | $\color{green}3 Clear, distinct humps$ | $\color{green}3 Clear, distinct humps$ | $\color{green}3 Clear, distinct humps$ | $\color{green}3 Clear, distinct humps$ | $\color{yellow}2 Clear, distinct humps$ | $\color{yellow}2 Clear, distinct humps$ | $\color{yellow}2 Clear and distinct humps$ | $\color{yellow}2 Clear and distinct humps$ |
+| TSS-Enrichment Score | $\color{red}7.692382151686117$ | $\color{red}7.354598361825624$ | $\color{green}23.294805448649445$ | $\color{green}20.962438980086663$ | $\color{yellow}18.365117628803656$ | $\color{yellow}18.997852749462098$ | $\color{yellow}26.084253634636482$ | $\color{yellow}14.011771178374902$ |
+| NRF (Non-Redundant Fraction) | $\color{green}0.935887$ | $\color{green}0.94404$ | $\color{yellow}0.884593$ | $\color{yellow}0.899531$ | $\color{red}0.301612$ | $\color{red}0.270462$ | $\color{yellow}0.778014$ | $\color{green}0.969527$ |
+| Rescue Ratio | $\color{green}1.0043626038838573$ | $\color{green}1.0122929315643505$ | $\color{green}1.0906310179587084$ | $\color{green}1.24175568252391$ | $\color{green}1.013263779368353$ | $\color{green}1.0098552058921995$ | $\color{red}2.0842882741797046$ | $\color{red}4.283663165487085$ |
+| Self-consistency Ratio | $\color{green}1.0756982081825852$ | $\color{green}1.1043673083661616$ | $\color{green}1.2192105681999046$ | $\color{green}1.4284339019600292$ | $\color{green}1.2220589050973432$ | $\color{red}1.2891362811933205$ | $\color{red}3.6038942470169237$ | $\color{red}6.26995057660626$ |
+| Reproducibility Test | $\color{green}Pass$ | $\color{green}Pass$ | $\color{green}Pass$ | $\color{green}Pass$ | $\color{green}Pass$ | $\color{green}Pass$ | $\color{red}Fail$ | $\color{red}Fail$ |
 
 ## Conclusion:
 
