@@ -26,6 +26,9 @@ The project involves comparing promoters and enhancers between Human and Mouse d
 ### 1. Quality Control Analysis
 The [QC_Analysis](QC_Analysis/README.md) provides a comprehensive evaluation of the quality of the human and mouse open chromatin data. It includes assessments of read quality, mapping efficiency, and peak calling performance. The analysis ensures that the mouse and human liver ATAC-seq data are of high quality and suitable for downstream analyses.
 
+### 3. GO enrichment analysis using rGREAT
+Regions are grouped into conserved (open in both species) and species-specific (open in one species but closed in the other). rGREAT is run on each group to identify enriched GO Biological Processes. It assigns regions to genes and performs enrichment based on genome coverage.
+
 ## Dependencies:
 Python version *3.10 or newer* (https://www.python.org/downloads/release/python-3100/)
 
