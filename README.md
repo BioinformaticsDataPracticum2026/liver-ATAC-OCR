@@ -29,7 +29,7 @@ The [QC_Analysis](QC_Analysis/README.md) provides a comprehensive evaluation of 
 ### 3. GO enrichment analysis using rGREAT
 Regions are grouped into conserved (open in both species) and species-specific (open in one species but closed in the other). rGREAT is run on each group to identify enriched GO Biological Processes. It assigns regions to genes and performs enrichment based on genome coverage.
 
-### 5. Promoter and enhancer classification using BEDTools
+### 4. Promoter and enhancer classification using BEDTools
 OCRs are classified into candidate promoters and candidate enhancers using BEDTools. Promoter regions are generated from annotated transcription start sites, and OCRs are grouped based on whether they overlap promoter regions or fall outside them. This analysis helps compare promoter-like and enhancer-like regulatory regions across species and conservation categories.
 
 ## Dependencies:
