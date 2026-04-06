@@ -2,9 +2,9 @@
 #SBATCH -J motif_analysis     # Job name
 #SBATCH -p RM-shared          # Partition
 #SBATCH -N 1                  # Number of nodes
-#SBATCH -n 4                 # Number of tasks (CPUs)
+#SBATCH --cpus-per-task=16     # Number of tasks (CPUs)
 #SBATCH -t 12:00:00           # Walltime (hh:mm:ss)
-#SBATCH --mem=4G             # Memory
+#SBATCH --mem=30G             # Memory
 #SBATCH -o /ocean/projects/bio230007p/sujathab/Motif_analysis/logs/task5_motif_%j.out
 #SBATCH -e /ocean/projects/bio230007p/sujathab/Motif_analysis/logs/task5_motif_%j.err
 
