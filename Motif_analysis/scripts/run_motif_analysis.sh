@@ -3,7 +3,7 @@
 #SBATCH -p RM-shared          # Partition
 #SBATCH -N 1                  # Number of nodes
 #SBATCH --cpus-per-task=16     # Number of tasks (CPUs)
-#SBATCH -t 12:00:00           # Walltime (hh:mm:ss)
+#SBATCH -t 24:00:00           # Walltime (hh:mm:ss)
 #SBATCH --mem=30G             # Memory
 #SBATCH -o /ocean/projects/bio230007p/sujathab/Motif_analysis/logs/task5_motif_%j.out
 #SBATCH -e /ocean/projects/bio230007p/sujathab/Motif_analysis/logs/task5_motif_%j.err

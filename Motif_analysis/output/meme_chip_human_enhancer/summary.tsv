@@ -1,0 +1,20 @@
+MOTIF_INDEX	MOTIF_SOURCE	MOTIF_ID	ALT_ID	CONSENSUS	WIDTH	SITES	E-VALUE	E-VALUE_SOURCE	MOST_SIMILAR_MOTIF_SOURCE	MOST_SIMILAR_MOTIF	URL
+1	MEME	RSYGCCMYCTRSTGG	MEME-1	RSYGCCMYCTRSTGG	15	2616	4.3e-116	MEME	/ocean/projects/bio230007p/sujathab/motif_dbs/JASPAR2026_vertebrates_combined.meme	MA0139.2 (CTCF)	http://jaspar.elixir.no/matrix/MA0139.2
+2	STREME	1-CCACYAGRKGGCRSYRKW	STREME-1	CCACYAGRKGGCRSYRKW	18	2523	4.6e-060	STREME	/ocean/projects/bio230007p/sujathab/motif_dbs/JASPAR2026_vertebrates_combined.meme	MA0139.2 (CTCF)	http://jaspar.elixir.no/matrix/MA0139.2
+3	MEME	TGTGTGTGTGTGTGTGTGTG	MEME-4	TGTGTGTGTGTGTGTGTGTG	20	265	4.8e-016	MEME	 	 	 
+4	MEME	KGGGGGGGGGGGGGG	MEME-5	KGGGGGGGGGGGGGG	15	479	9.5e-015	MEME	/ocean/projects/bio230007p/sujathab/motif_dbs/JASPAR2026_vertebrates_combined.meme	MA0753.3 (ZNF740)	http://jaspar.elixir.no/matrix/MA0753.3
+5	MEME	AAAAAAAAAAWAAAWAAAAA	MEME-2	AAAAAAAAAAWAAAWAAAAA	20	1294	3.7e-014	MEME	/ocean/projects/bio230007p/sujathab/motif_dbs/JASPAR2026_vertebrates_combined.meme	MA2593.1 (ZNF362)	http://jaspar.elixir.no/matrix/MA2593.1
+6	MEME	YYCYYYCTYYCTYYCTYYCT	MEME-6	YYCYYYCTYYCTYYCTYYCT	20	483	1.8e-010	MEME	/ocean/projects/bio230007p/sujathab/motif_dbs/JASPAR2026_vertebrates_combined.meme	MA0149.1 (EWSR1-FLI1)	http://jaspar.elixir.no/matrix/MA0149.1
+7	STREME	2-AGGAARY	STREME-2	AGGAARY	7	6321	2.5e-007	STREME	/ocean/projects/bio230007p/sujathab/motif_dbs/JASPAR2026_vertebrates_combined.meme	MA1942.2 (ETV2::FOXI1)	http://jaspar.elixir.no/matrix/MA1942.2
+8	MEME	TCTCTCTCTCTCTCTCTCT	MEME-3	TCTCTCTCTCTCTCTCTCT	19	230	4.6e-006	MEME	/ocean/projects/bio230007p/sujathab/motif_dbs/JASPAR2026_vertebrates_combined.meme	MA2496.1 (ZNF596)	http://jaspar.elixir.no/matrix/MA2496.1
+9	STREME	3-CCCCACCCCC	STREME-3	CCCCACCCCC	10	1090	3.7e-004	STREME	/ocean/projects/bio230007p/sujathab/motif_dbs/JASPAR2026_vertebrates_combined.meme	MA0039.5 (KLF4)	http://jaspar.elixir.no/matrix/MA0039.5
+10	MEME	CTYBCTKYCCYTBCYTCYCY	MEME-7	CTYBCTKYCCYTBCYTCYCY	20	371	4.0e-003	MEME	/ocean/projects/bio230007p/sujathab/motif_dbs/JASPAR2026_vertebrates_combined.meme	MA0149.1 (EWSR1-FLI1)	http://jaspar.elixir.no/matrix/MA0149.1
+11	STREME	4-AAAGCAAA	STREME-4	AAAGCAAA	8	3702	4.0e-003	STREME	/ocean/projects/bio230007p/sujathab/motif_dbs/JASPAR2026_vertebrates_combined.meme	MA0051.2 (IRF2)	http://jaspar.elixir.no/matrix/MA0051.2
+12	STREME	5-RTAAATA	STREME-5	RTAAATA	7	3817	7.9e-003	STREME	/ocean/projects/bio230007p/sujathab/motif_dbs/JASPAR2026_vertebrates_combined.meme	MA0845.1 (FOXB1)	http://jaspar.elixir.no/matrix/MA0845.1
+13	STREME	6-AGGAAG	STREME-6	AGGAAG	6	1891	1.2e-002	STREME	/ocean/projects/bio230007p/sujathab/motif_dbs/JASPAR2026_vertebrates_combined.meme	MA2326.1 (IKZF2)	http://jaspar.elixir.no/matrix/MA2326.1
+14	STREME	7-AGAAACCCTGTCT	STREME-7	AGAAACCCTGTCT	13	88	1.5e-002	STREME	/ocean/projects/bio230007p/sujathab/motif_dbs/JASPAR2026_vertebrates_combined.meme	MA2526.1 (ZNF721)	http://jaspar.elixir.no/matrix/MA2526.1
+15	STREME	8-CAAAGGTCA	STREME-8	CAAAGGTCA	9	1806	3.7e-002	STREME	/ocean/projects/bio230007p/sujathab/motif_dbs/JASPAR2026_vertebrates_combined.meme	MA0512.2 (Rxra)	http://jaspar.elixir.no/matrix/MA0512.2
+
+# MEME-ChIP (Motif Analysis of Large Nucleotide Datasets): Version 5.4.1 released on Sat Aug 21 19:23:23 2021 -0700
+# The format of this file is described at https://meme-suite.org/meme//doc/meme-chip-output-format.html
+# meme-chip -oc /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer -maxw 20 -meme-nmotifs 10 -meme-p 4 -db /ocean/projects/bio230007p/sujathab/motif_dbs/JASPAR2026_vertebrates_combined.meme /ocean/projects/bio230007p/sujathab/Motif_analysis/output/fastas/human_enhancer.fa
