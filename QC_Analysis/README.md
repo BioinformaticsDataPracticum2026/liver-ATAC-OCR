@@ -2,7 +2,7 @@
 
 ## Aim:
 
-The aim of this analysis is to evaluate the quality of ATAC-seq data obtained from mouse and human liver and adrenal gland tissues by assessing various quality control (QC) metrics. This will help determine the reliability and reproducibility of the data for downstream analyses. Out of the 2 organs (liver and adrenal gland [alternative] tissues) among 2 species (mouse and human),the organ with best quality data will be identified based on the QC metrics for both organisms.
+The aim of this task is to evaluate the quality of ATAC-seq data obtained from mouse and human liver and adrenal gland tissues by assessing various quality control (QC) metrics. This will help determine the reliability and reproducibility of the data for downstream analyses. Out of the 2 organs (liver and adrenal gland [alternative] tissues) among 2 species (mouse and human),the organ with best quality data will be identified based on the QC metrics for both organisms.
 
 ## Metrics Identified for QC Analysis:
 

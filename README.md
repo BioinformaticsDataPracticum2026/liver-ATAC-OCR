@@ -34,6 +34,9 @@ Regions are grouped into conserved (open in both species) and species-specific (
 ### 4. Promoter and enhancer classification using BEDTools
 OCRs are classified into candidate promoters and candidate enhancers using BEDTools. Promoter regions are generated from annotated transcription start sites, and OCRs are grouped based on whether they overlap promoter regions or fall outside them. This analysis helps compare promoter-like and enhancer-like regulatory regions across species and conservation categories.
 
+### 5. Motif enrichment analysis using MEME-ChIP
+MEME-ChIP is used to identify transcription factor binding motifs that are enriched in the conserved and species-specific open chromatin regions. The analysis provides insights into the transcription factors that may be driving regulatory activity in the liver and how this may differ between human and mouse.
+
 ## Dependencies:
 Python version *3.10 or newer* (https://www.python.org/downloads/release/python-3100/)
 
@@ -53,9 +56,19 @@ R version *4.0 or newer* (https://cran.r-project.org/bin/macosx/base/)
 
 3. ***ENCODE portal (https://www.encodeproject.org/)***
 
-4. ***rGREAT (https://github.com/jokergoo/rGREAT)***
+4. ***HALPER (https://github.com/pfenninglab/halLiftover-postprocessing)***
 
-5. ***HALPER (https://github.com/pfenninglab/halLiftover-postprocessing)***
+5. ***rGREAT (https://github.com/jokergoo/rGREAT)***
+
+6. ***BEDTools (https://bedtools.readthedocs.io/en/latest/)***
+
+7. ***MEME-ChIP (https://meme-suite.org/meme/doc/meme-chip.html)***
+
+8. ***Philip Machanick and Timothy L. Bailey, "MEME-ChIP: motif analysis of large DNA datasets", Bioinformatics 27(12):1696-1697, 2011. (https://doi.org/10.1093/bioinformatics/btr189)***
+
+9. ***Timothy L. Bailey and Charles Elkan, "Fitting a mixture model by expectation maximization to discover motifs in biopolymers", Proceedings of the Second International Conference on Intelligent Systems for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994. (http://www.aaai.org/Papers/ISMB/1994/ISMB94-004.pdf)***
+
+10. ***Timothy L. Bailey, "STREME: accurate and versatile sequence motif discovery", Bioinformatics, Mar. 24, 2021. (https://doi.org/10.1093/bioinformatics/btab203)***
 
 ## Contributors:
 
