@@ -1,9 +1,9 @@
 # rGREAT: GO Biological Process Enrichment Analysis of Open Chromatin Regions in Human and Mouse Liver
 
-### Aim
+## Aim
 The aim of this analysis is to identify candidate biological processes regulated by open chromatin regions (OCRs) in human and mouse liver tissue using GO Biological Process (GO:BP) enrichment analysis via rGREAT. rGREAT (Regulatory Genomic Regions Enrichment of Annotations Tool) associates genomic regions with nearby genes and then tests whether those genes are enriched for specific biological processes compared to a background expectation. By comparing enrichment results across species-shared and species-specific OCRs, we can determine which regulatory programs are evolutionarily conserved and which are unique to each species. This helps us understand how open chromatin landscape differences between human and mouse may translate into functional divergence at the level of biological pathways.
 
-#### Input Files
+## Input Files
 The input data for this analysis consists of open chromatin regions (OCRs) identified from human and mouse liver ATAC-seq data. The original peak files represent all accessible regulatory regions in each species' liver tissue. These OCRs were further classified into shared (orthologous regions open in both species) and species-specific (open in one species but closed in the orthologous region of the other species) groups using HALPER for cross-species liftover and BEDTools intersect for peak overlap classification. The original peak files are located in the `Mapping/outputs/` directory, while the shared and species-specific BED files are located in the `PE_classification/output/unique/` directory.
 
 **Part a — Each species' OCRs (all open chromatin regions):**
