@@ -12,7 +12,7 @@
 #SBATCH --mail-type=BEGIN,END,FAIL
 #SBATCH --mail-user=surathas@andrew.cmu.edu
 
-cd /ocean/projects/bio230007p/ssriram6/liver-ATAC-OCR
+cd /ocean/projects/bio230007p/ssriram6/liver-ATAC-OCR/rGREAT_Analysis/scripts/rgreat_analysis.R
 
 source activate rgreat_env
 
