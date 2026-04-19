@@ -21,7 +21,7 @@ If you use this repository, please cite:
 
 **Evan Lin, Arun Sujatha Bharath Raj, Nikita Rajesh, Suratha Sriram**
 (2026). *TRACE: Transcription Regulatory Analysis of Conserved Elements*.
-03-713: Bioinformatics Data Integration Practicum, Spring 2026
+03-713: Bioinformatics Data Integration Practicum,
 Carnegie Mellon University
 
 ---
