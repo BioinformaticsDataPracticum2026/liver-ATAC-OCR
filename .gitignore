@@ -11,7 +11,8 @@ data/processed/
 # -----------------------------------------------------------------------------
 # Mapping — ignore everything except the HALPER liftover result
 # -----------------------------------------------------------------------------
-Mapping/outputs/
+Mapping/outputs/*.narrowPeak
+Mapping/outputs/*.halLiftover.sFile.bed.gz
 !Mapping/outputs/*.HALPER.narrowPeak.gz
 
 # -----------------------------------------------------------------------------
