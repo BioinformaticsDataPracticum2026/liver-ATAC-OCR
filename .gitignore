@@ -1,0 +1,127 @@
+# =============================================================================
+# liver-ATAC-OCR (TRACE) .gitignore
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# PE Classification — ignore all intermediate BEDs, keep summary tables only
+# -----------------------------------------------------------------------------
+PE_classification/input/*.gz
+PE_classification/input/*.bed
+PE_classification/outputs/rowcount/*.bed
+PE_classification/outputs/unique/*.bed
+
+# Keep summary tables
+!PE_classification/outputs/rowcount/summary.tsv
+!PE_classification/outputs/unique/summary.tsv
+
+# -----------------------------------------------------------------------------
+# rGREAT — ignore raw CSVs, keep all plots
+# -----------------------------------------------------------------------------
+rGREAT_Analysis/outputs/*.csv
+
+# Keep plots
+!rGREAT_Analysis/outputs/plots/
+
+# -----------------------------------------------------------------------------
+# MEME-ChIP — ignore everything except human/mouse specific enhancer results
+# Keep only: meme-chip.html and summary.tsv in those two folders
+# -----------------------------------------------------------------------------
+
+# Ignore all other meme_chip run folders entirely
+Motif_analysis/outputs/meme_chip_human_enhancer/
+Motif_analysis/outputs/meme_chip_mouse_enhancer/
+Motif_analysis/outputs/meme_chip_human_promoter/
+Motif_analysis/outputs/meme_chip_mouse_promoter/
+Motif_analysis/outputs/meme_chip_shared_enhancer/
+
+# For kept folders, ignore intermediate files — keep only meme-chip.html + summary.tsv
+Motif_analysis/outputs/meme_chip_human_specific_enhancer/background
+Motif_analysis/outputs/meme_chip_human_specific_enhancer/centrimo_msgs.txt
+Motif_analysis/outputs/meme_chip_human_specific_enhancer/centrimo_out/
+Motif_analysis/outputs/meme_chip_human_specific_enhancer/combined.meme
+Motif_analysis/outputs/meme_chip_human_specific_enhancer/fimo_out_*/
+Motif_analysis/outputs/meme_chip_human_specific_enhancer/meme_out/
+Motif_analysis/outputs/meme_chip_human_specific_enhancer/meme_tomtom_out/
+Motif_analysis/outputs/meme_chip_human_specific_enhancer/motif_alignment.txt
+Motif_analysis/outputs/meme_chip_human_specific_enhancer/progress_log.txt
+Motif_analysis/outputs/meme_chip_human_specific_enhancer/seqs-centered
+Motif_analysis/outputs/meme_chip_human_specific_enhancer/spamo1_msgs.txt
+Motif_analysis/outputs/meme_chip_human_specific_enhancer/spamo_out_*/
+Motif_analysis/outputs/meme_chip_human_specific_enhancer/streme_out/
+Motif_analysis/outputs/meme_chip_human_specific_enhancer/streme_tomtom_out/
+Motif_analysis/outputs/meme_chip_human_specific_enhancer/*.fa
+
+Motif_analysis/outputs/meme_chip_mouse_specific_enhancer/background
+Motif_analysis/outputs/meme_chip_mouse_specific_enhancer/centrimo_msgs.txt
+Motif_analysis/outputs/meme_chip_mouse_specific_enhancer/centrimo_out/
+Motif_analysis/outputs/meme_chip_mouse_specific_enhancer/combined.meme
+Motif_analysis/outputs/meme_chip_mouse_specific_enhancer/fimo_out_*/
+Motif_analysis/outputs/meme_chip_mouse_specific_enhancer/meme_out/
+Motif_analysis/outputs/meme_chip_mouse_specific_enhancer/meme_tomtom_out/
+Motif_analysis/outputs/meme_chip_mouse_specific_enhancer/motif_alignment.txt
+Motif_analysis/outputs/meme_chip_mouse_specific_enhancer/progress_log.txt
+Motif_analysis/outputs/meme_chip_mouse_specific_enhancer/seqs-centered
+Motif_analysis/outputs/meme_chip_mouse_specific_enhancer/spamo1_msgs.txt
+Motif_analysis/outputs/meme_chip_mouse_specific_enhancer/spamo_out_*/
+Motif_analysis/outputs/meme_chip_mouse_specific_enhancer/streme_out/
+Motif_analysis/outputs/meme_chip_mouse_specific_enhancer/streme_tomtom_out/
+Motif_analysis/outputs/meme_chip_mouse_specific_enhancer/*.fa
+
+# -----------------------------------------------------------------------------
+# Large genome/reference files
+# -----------------------------------------------------------------------------
+*.fa
+*.fasta
+*.hal
+*.narrowPeak
+*.bed.gz
+*.bam
+*.bai
+
+# -----------------------------------------------------------------------------
+# SLURM log files (auto-generated on Bridges-2)
+# -----------------------------------------------------------------------------
+*.out
+*.err
+slurm-*.out
+
+# -----------------------------------------------------------------------------
+# R environment clutter
+# -----------------------------------------------------------------------------
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# -----------------------------------------------------------------------------
+# Python environment clutter
+# -----------------------------------------------------------------------------
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+*.egg-info/
+dist/
+build/
+
+# -----------------------------------------------------------------------------
+# Conda environments
+# -----------------------------------------------------------------------------
+envs/
+.conda/
+
+# -----------------------------------------------------------------------------
+# OS clutter
+# -----------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# -----------------------------------------------------------------------------
+# Editor clutter
+# -----------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
