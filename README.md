@@ -9,7 +9,7 @@
 ![MEME-ChIP](https://img.shields.io/badge/MEME--ChIP-5.4.1-orange.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-TRACE - A cross-species regulatory genomics pipeline for comparing open chromatin regions (OCRs) between human and mouse liver tissue using ATAC-seq data. The pipeline maps OCRs across species, classifies them as enhancers or promoters, identifies enriched biological processes, and discovers over-represented sequence motifs.
+***TRACE*** - A cross-species regulatory genomics pipeline for comparing open chromatin regions (OCRs) between human and mouse liver tissue using ATAC-seq data. The pipeline maps OCRs across species, classifies them as enhancers or promoters, identifies enriched biological processes, and discovers over-represented sequence motifs.
 
 Developed for **03-713: Bioinformatics Data Integration Practicum**, Spring 2026, Carnegie Mellon University.
 
