@@ -11,9 +11,7 @@ data/processed/
 # -----------------------------------------------------------------------------
 # Mapping — ignore everything except the HALPER liftover result
 # -----------------------------------------------------------------------------
-Mapping/outputs/*.narrowPeak
-Mapping/outputs/*.halLiftover.sFile.bed.gz
-!Mapping/outputs/*.HALPER.narrowPeak.gz
+
 
 # -----------------------------------------------------------------------------
 # PE Classification — ignore intermediate BEDs, keep summary tables
