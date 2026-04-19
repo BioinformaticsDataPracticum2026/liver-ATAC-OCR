@@ -3,6 +3,12 @@
 # =============================================================================
 
 # -----------------------------------------------------------------------------
+# Mapping — ignore everything except HALPER liftover result
+# -----------------------------------------------------------------------------
+Mapping/outputs/*.narrowPeak
+!Mapping/outputs/*.HALPER.narrowPeak.gz
+
+# -----------------------------------------------------------------------------
 # PE Classification — ignore all intermediate BEDs, keep summary tables only
 # -----------------------------------------------------------------------------
 PE_classification/input/*.gz
@@ -33,6 +39,9 @@ Motif_analysis/outputs/meme_chip_mouse_enhancer/
 Motif_analysis/outputs/meme_chip_human_promoter/
 Motif_analysis/outputs/meme_chip_mouse_promoter/
 Motif_analysis/outputs/meme_chip_shared_enhancer/
+Motif_analysis/outputs/beds
+Motif_analysis/outputs/fastas
+Motif_analysis/logs
 
 # For kept folders, ignore intermediate files — keep only meme-chip.html + summary.tsv
 Motif_analysis/outputs/meme_chip_human_specific_enhancer/background
