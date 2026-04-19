@@ -1,8 +1,8 @@
 # ***T***ranscription ***R***egulatory ***A***nalysis of ***C***onserved ***E***lements (***TRACE***)
 
-![HALPER](https://img.shields.io/badge/HALPER-1.0+-orange.svg)
+![HALPER](https://img.shields.io/badge/HALPER-orange.svg)
 ![Python](https://img.shields.io/badge/python-3.6+-blue.svg)
-![bedtools](https://img.shields.io/badge/bedtools-2.31.0-orange.svg)
+![bedtools](https://img.shields.io/badge/bedtools-2.31+-orange.svg)
 ![rGREAT](https://img.shields.io/badge/rGREAT-2.0+-orange.svg)
 ![ggplot2](https://img.shields.io/badge/ggplot2-3.3+-blue.svg)
 ![R](https://img.shields.io/badge/R-4.0+-blue.svg)
