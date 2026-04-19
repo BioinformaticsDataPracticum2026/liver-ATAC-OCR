@@ -1,10 +1,12 @@
 # ***T***ranscription ***R***egulatory ***A***nalysis of ***C***onserved ***E***lements (***TRACE***)
 
-![Python](https://img.shields.io/badge/python-3.10+-blue.svg)
-![NumPy](https://img.shields.io/badge/numpy-1.21+-blue.svg)
-![Matplotlib](https://img.shields.io/badge/matplotlib-3.4+-blue.svg)
+![HALPER](https://img.shields.io/badge/HALPER-1.0+-orange.svg)
+![Python](https://img.shields.io/badge/python-3.6+-blue.svg)
+![bedtools](https://img.shields.io/badge/bedtools-2.31.0-orange.svg)
+![rGREAT](https://img.shields.io/badge/rGREAT-2.0+-orange.svg)
+![ggplot2](https://img.shields.io/badge/ggplot2-3.3+-blue.svg)
 ![R](https://img.shields.io/badge/R-4.0+-blue.svg)
-![Bioconductor](https://img.shields.io/badge/Bioconductor-3.14+-blue.svg)
+![MEME-ChIP](https://img.shields.io/badge/MEME--ChIP-5.4.1-orange.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
 TRACE - A cross-species regulatory genomics pipeline for comparing open chromatin regions (OCRs) between human and mouse liver tissue using ATAC-seq data. The pipeline maps OCRs across species, classifies them as enhancers or promoters, identifies enriched biological processes, and discovers over-represented sequence motifs.
