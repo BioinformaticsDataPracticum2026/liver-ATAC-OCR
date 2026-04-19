@@ -267,6 +267,7 @@ liver-ATAC-OCR/
 - Mark, M. et al. (2009). Retinoic Acid Signalling in Development. *Physiological Reviews* 89(2):843–884. https://doi.org/10.1152/physrev.00026.2008
 - Blaner, W.S. et al. (2009). Hepatic stellate cell lipid droplets: A specialized lipid droplet for retinoid storage. *Biochimica et Biophysica Acta* 1791(6):467–473. https://doi.org/10.1016/j.bbalip.2008.11.001
 - Dzierzak, E. & Philipsen, S. (2013). Erythropoiesis: Development and Differentiation. *Cold Spring Harbor Perspectives in Medicine* 3(4). https://doi.org/10.1101/cshperspect.a011601
+- Tappy, L. & Lê, K.A. (2010) — "Metabolic Effects of Fructose and the Worldwide Increase in Obesity." Physiological Reviews 90(1):23–46. https://doi.org/10.1152/physrev.00019.2009
 
 ### Biological interpretation — TF motifs
  
@@ -276,7 +277,13 @@ liver-ATAC-OCR/
 - Lefebvre, P. et al. (2006). Sorting out the roles of PPARα in energy metabolism and vascular homeostasis. *Journal of Clinical Investigation* 116(3):571–580. https://doi.org/10.1172/JCI27989
 - Suske, G. (1999). The Sp-family of transcription factors. *Gene* 238(2):291–300. https://doi.org/10.1016/S0378-1119(99)00357-1
 - Golson, M.L. & Kaestner, K.H. (2016). Fox transcription factors: from development to disease. *Development* 143(24):4558–4570. https://doi.org/10.1242/dev.112672
-- Tetreault & Yang (2010) — "Krüppel-like factors in cancer." Journal of Cellular and Molecular Medicine 14(6a):1175–1187. https://doi.org/10.1111/j.1582-4934.2010.01054.x
+- McConnell & Yang (2010) — "Mammalian Krüppel-Like Factors in Health and Disease." Physiological Reviews 90(4):1337–1381. https://doi.org/10.1152/physrev.00058.2009
+- Hayhurst et al. (2001) — "Hepatocyte nuclear factor 4α is essential for maintenance of hepatic gene expression." Molecular and Cellular Biology 21(4):1393–1403. https://doi.org/10.1128/MCB.21.4.1393-1403.2001
+- Barish et al. (2006) — "PPARδ: a dagger in the heart of the metabolic syndrome." Journal of Clinical Investigation 116(3):590–597. https://doi.org/10.1172/JCI27955
+- Mangelsdorf & Evans (1995) — "The RXR heterodimers and orphan receptors." Cell 83(6):841–850. https://doi.org/10.1016/0092-8674(95)90200-7
+- Ramji & Foka (2002) — "CCAAT/enhancer-binding proteins: structure, function and regulation." Biochemical Journal 365(3):561–575. https://doi.org/10.1042/BJ20020508
+- Cereghini (1996) — "Liver-enriched transcription factors and hepatocyte differentiation." FASEB Journal 10(2):267–282. https://doi.org/10.1096/fasebj.10.2.8641560 ← this covers both HNF1B and the broader liver TF landscape, so it's efficient.
+
 
 ---
 
