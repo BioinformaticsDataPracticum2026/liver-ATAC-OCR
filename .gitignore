@@ -1,1 +1,114 @@
-.DS_Store
+# =============================================================================
+# liver-ATAC-OCR (TRACE) .gitignore
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Large data and output directories
+# -----------------------------------------------------------------------------
+data/raw/
+data/processed/
+
+# -----------------------------------------------------------------------------
+# Mapping — ignore everything except the HALPER liftover result
+# -----------------------------------------------------------------------------
+Mapping/outputs/
+!Mapping/outputs/*.HALPER.narrowPeak.gz
+
+# -----------------------------------------------------------------------------
+# PE Classification — ignore intermediate BEDs, keep summary tables
+# -----------------------------------------------------------------------------
+PE_classification/output/rowcount/
+PE_classification/output/unique/
+!PE_classification/output/rowcount/summary.tsv
+!PE_classification/output/unique/summary.tsv
+
+# -----------------------------------------------------------------------------
+# rGREAT — ignore raw CSVs, keep all plots
+# -----------------------------------------------------------------------------
+rGREAT_Analysis/outputs/*.csv
+!rGREAT_Analysis/outputs/plots/
+
+# -----------------------------------------------------------------------------
+# MEME-ChIP — keep only human-specific and mouse-specific enhancer results
+# (summary.tsv + meme-chip.html only; ignore bulk intermediate files)
+# -----------------------------------------------------------------------------
+Motif_analysis/output/beds/
+Motif_analysis/output/fastas/
+Motif_analysis/output/logs/
+Motif_analysis/output/meme_chip_human_enhancer/
+Motif_analysis/output/meme_chip_mouse_enhancer/
+Motif_analysis/output/meme_chip_human_promoter/
+Motif_analysis/output/meme_chip_mouse_promoter/
+Motif_analysis/output/meme_chip_shared_enhancer/
+
+# Keep human-specific and mouse-specific enhancer results
+!Motif_analysis/output/meme_chip_human_specific_enhancer/
+!Motif_analysis/output/meme_chip_mouse_specific_enhancer/
+
+# Within kept MEME-ChIP folders, ignore large intermediate files
+Motif_analysis/output/meme_chip_human_specific_enhancer/fimo_out*/
+Motif_analysis/output/meme_chip_human_specific_enhancer/dreme_out*/
+Motif_analysis/output/meme_chip_human_specific_enhancer/*.xml
+Motif_analysis/output/meme_chip_mouse_specific_enhancer/fimo_out*/
+Motif_analysis/output/meme_chip_mouse_specific_enhancer/dreme_out*/
+Motif_analysis/output/meme_chip_mouse_specific_enhancer/*.xml
+
+# -----------------------------------------------------------------------------
+# Reference and genome files (too large for GitHub)
+# -----------------------------------------------------------------------------
+*.fa
+*.fasta
+*.hal
+*.narrowPeak
+*.narrowPeak.gz
+*.bed.gz
+*.bam
+*.bai
+
+# -----------------------------------------------------------------------------
+# SLURM log files (auto-generated on Bridges-2)
+# -----------------------------------------------------------------------------
+*.out
+*.err
+slurm-*.out
+
+# -----------------------------------------------------------------------------
+# R environment clutter
+# -----------------------------------------------------------------------------
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# -----------------------------------------------------------------------------
+# Python environment clutter
+# -----------------------------------------------------------------------------
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+*.egg-info/
+dist/
+build/
+
+# -----------------------------------------------------------------------------
+# Conda environments
+# -----------------------------------------------------------------------------
+envs/
+.conda/
+
+# -----------------------------------------------------------------------------
+# OS clutter
+# -----------------------------------------------------------------------------
+.DS_Store           # Mac
+Thumbs.db           # Windows
+Desktop.ini         # Windows
+
+# -----------------------------------------------------------------------------
+# Editor clutter
+# -----------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

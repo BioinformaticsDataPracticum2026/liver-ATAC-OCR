@@ -1,0 +1,4 @@
+
+# FIMO (Find Individual Motif Occurrences): Version 5.4.1 compiled on Jan 24 2022 at 13:05:16
+# The format of this file is described at https://meme-suite.org/meme/doc/fimo-output-format.html.
+# fimo --parse-genomic-coord --verbosity 1 --oc /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_mouse_specific_enhancer/fimo_out_21 --bgfile /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_mouse_specific_enhancer/background --motif 21-CACWGTG /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_mouse_specific_enhancer/streme_out/streme.xml /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_mouse_specific_enhancer/mouse_specific_enhancer.fa

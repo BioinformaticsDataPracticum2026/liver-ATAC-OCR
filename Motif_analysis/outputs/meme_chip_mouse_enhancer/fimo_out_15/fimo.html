@@ -1,0 +1,437 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:cis="http://zlab.bu.edu/schema/cisml" xmlns:fimo="http://noble.gs.washington.edu/schema/cisml" xmlns:mem="http://noble.gs.washington.edu/meme">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>FIMO Results</title>
+<style type="text/css">
+td.left {text-align: left;}
+td.right {text-align: right; padding-right: 1cm;}
+</style>
+</head>
+<body color="#000000">
+<a name="top_buttons"></a>
+<hr>
+<table summary="buttons" align="left" cellspacing="0">
+<tr>
+<td bgcolor="#00FFFF"><a href="#database_and_motifs"><b>Database and Motifs</b></a></td>
+<td bgcolor="#DDFFDD"><a href="#sec_i"><b>High-scoring Motif Occurences</b></a></td>
+<td bgcolor="#DDDDFF"><a href="#debugging_information"><b>Debugging Information</b></a></td>
+<td bgcolor="#FFDD00"><a href="fimo.tsv""><b>Results in TSV Format</b></a></td>
+<td bgcolor="#FFDDFF"><a href="fimo.gff""><b>Results in GFF3 Format</b></a></td>
+</tr>
+</table>
+<br/>
+<br/>
+<hr/>
+<center><big><b>FIMO - Motif search tool</b></big></center>
+<hr>
+<p>
+FIMO version 5.4.1, (Release date: Sat Aug 21 19:23:23 2021 -0700)
+</p>
+<p>
+For further information on how to interpret these results please access <a href="https://meme-suite.org/meme/doc/fimo-output-format.html">https://meme-suite.org/meme/doc/fimo-output-format.html</a>.<br>
+To get a copy of the FIMO software please access <a href="https://meme-suite.org">https://meme-suite.org</a>
+
+</p>
+<p>If you use FIMO in your research, please cite the following paper:<br>
+Charles E. Grant, Timothy L. Bailey, and William Stafford Noble,
+"FIMO: Scanning for occurrences of a given motif",
+<i>Bioinformatics</i>, <b>27</b>(7):1017-1018, 2011.
+<a href="http://bioinformatics.oxfordjournals.org/content/27/7/1017">[full text]</a></p>
+<hr>
+<center><big><b><a name="database_and_motifs">DATABASE AND MOTIFS</a></b></big></center>
+<hr>
+<div style="padding-left: 0.75in; line-height: 1em; font-family: monospace;">
+<p>
+  DATABASE /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_mouse_enhancer/mouse_enhancer.fa
+  <br />
+  Database contains 48583 sequences, 9716600 residues
+</p>
+<p>
+  MOTIFS /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_mouse_enhancer/streme_out/streme.xml (DNA)
+  <table>
+    <thead>
+      <tr>
+        <th style="border-bottom: 1px dashed;">MOTIF</th>
+        <th style="border-bottom: 1px dashed; padding-left: 1em;">WIDTH</th>
+        <th style="border-bottom: 1px dashed; padding-left: 1em;text-align:left;" >
+         BEST POSSIBLE MATCH
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align:right;">1-CCASHAGRKGGCRSYRBWK</td>
+        <td style="text-align:right;padding-left: 1em;">19</td>
+        <td style="text-align:left;padding-left: 1em;">CCACCAGAGGGCACTATAG</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">2-CAAAGGTCA</td>
+        <td style="text-align:right;padding-left: 1em;">9</td>
+        <td style="text-align:left;padding-left: 1em;">CAAAGGTCA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">3-WAARYAAAYAH</td>
+        <td style="text-align:right;padding-left: 1em;">11</td>
+        <td style="text-align:left;padding-left: 1em;">AAAATAAATAA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">4-RTTDCGHAAY</td>
+        <td style="text-align:right;padding-left: 1em;">10</td>
+        <td style="text-align:left;padding-left: 1em;">ATTGCGCAAT</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">5-GTAGCCCWGGCTGKCCTBGA</td>
+        <td style="text-align:right;padding-left: 1em;">20</td>
+        <td style="text-align:left;padding-left: 1em;">GTAGCCCAGGCTGGCCTGGA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">6-TAATSATTAACYA</td>
+        <td style="text-align:right;padding-left: 1em;">13</td>
+        <td style="text-align:left;padding-left: 1em;">TAATCATTAACTA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">7-CCCCACCCCC</td>
+        <td style="text-align:right;padding-left: 1em;">10</td>
+        <td style="text-align:left;padding-left: 1em;">CCCCACCCCC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">8-AGWGCTGGRRTTAMAGGYR</td>
+        <td style="text-align:right;padding-left: 1em;">19</td>
+        <td style="text-align:left;padding-left: 1em;">AGTGCTGGGATTACAGGTA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">9-CTGAGCCATCTCTCCAGCCC</td>
+        <td style="text-align:right;padding-left: 1em;">20</td>
+        <td style="text-align:left;padding-left: 1em;">CTGAGCCATCTCTCCAGCCC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">10-GCTCACAACCATCTGTAA</td>
+        <td style="text-align:right;padding-left: 1em;">18</td>
+        <td style="text-align:left;padding-left: 1em;">GCTCACAACCATCTGTAA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">11-CCTGCCTCTGCCTCCY</td>
+        <td style="text-align:right;padding-left: 1em;">16</td>
+        <td style="text-align:left;padding-left: 1em;">CCTGCCTCTGCCTCCC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">12-AAAGCAAA</td>
+        <td style="text-align:right;padding-left: 1em;">8</td>
+        <td style="text-align:left;padding-left: 1em;">AAAGCAAA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">13-AAAACAAAAMMAAA</td>
+        <td style="text-align:right;padding-left: 1em;">14</td>
+        <td style="text-align:left;padding-left: 1em;">AAAACAAAACAAAA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">14-AGGTCA</td>
+        <td style="text-align:right;padding-left: 1em;">6</td>
+        <td style="text-align:left;padding-left: 1em;">AGGTCA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">15-AACTCCAGTTCCAGGGR</td>
+        <td style="text-align:right;padding-left: 1em;">17</td>
+        <td style="text-align:left;padding-left: 1em;">AACTCCAGTTCCAGGGG</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">16-CCTGRGTTCRATYCCCAGC</td>
+        <td style="text-align:right;padding-left: 1em;">19</td>
+        <td style="text-align:left;padding-left: 1em;">CCTGGGTTCAATTCCCAGC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">17-CCCTCCCTCCCTCCCTCCCT</td>
+        <td style="text-align:right;padding-left: 1em;">20</td>
+        <td style="text-align:left;padding-left: 1em;">CCCTCCCTCCCTCCCTCCCT</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">18-AGATAA</td>
+        <td style="text-align:right;padding-left: 1em;">6</td>
+        <td style="text-align:left;padding-left: 1em;">AGATAA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">19-ATCRATA</td>
+        <td style="text-align:right;padding-left: 1em;">7</td>
+        <td style="text-align:left;padding-left: 1em;">ATCAATA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">20-CYRGGRAM</td>
+        <td style="text-align:right;padding-left: 1em;">8</td>
+        <td style="text-align:left;padding-left: 1em;">CTGGGAAC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">21-ACTTGGCA</td>
+        <td style="text-align:right;padding-left: 1em;">8</td>
+        <td style="text-align:left;padding-left: 1em;">ACTTGGCA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">22-ACAYACACACACACA</td>
+        <td style="text-align:right;padding-left: 1em;">15</td>
+        <td style="text-align:left;padding-left: 1em;">ACATACACACACACA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">23-AAGAGCAGYCAGTGCT</td>
+        <td style="text-align:right;padding-left: 1em;">16</td>
+        <td style="text-align:left;padding-left: 1em;">AAGAGCAGTCAGTGCT</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">24-CAAAGTC</td>
+        <td style="text-align:right;padding-left: 1em;">7</td>
+        <td style="text-align:left;padding-left: 1em;">CAAAGTC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">25-GACTTTGGACY</td>
+        <td style="text-align:right;padding-left: 1em;">11</td>
+        <td style="text-align:left;padding-left: 1em;">GACTTTGGACT</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">26-ACCATGTGGKTGCTGGGA</td>
+        <td style="text-align:right;padding-left: 1em;">18</td>
+        <td style="text-align:left;padding-left: 1em;">ACCATGTGGTTGCTGGGA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">27-GCCCCGCCY</td>
+        <td style="text-align:right;padding-left: 1em;">9</td>
+        <td style="text-align:left;padding-left: 1em;">GCCCCGCCC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">28-ATGCATGCAGTGCCY</td>
+        <td style="text-align:right;padding-left: 1em;">15</td>
+        <td style="text-align:left;padding-left: 1em;">ATGCATGCAGTGCCC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">29-GAAAGAGAAA</td>
+        <td style="text-align:right;padding-left: 1em;">10</td>
+        <td style="text-align:left;padding-left: 1em;">GAAAGAGAAA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">30-GTTTACAGAG</td>
+        <td style="text-align:right;padding-left: 1em;">10</td>
+        <td style="text-align:left;padding-left: 1em;">GTTTACAGAG</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">31-CCCTGCCC</td>
+        <td style="text-align:right;padding-left: 1em;">8</td>
+        <td style="text-align:left;padding-left: 1em;">CCCTGCCC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">32-TACACAGTGA</td>
+        <td style="text-align:right;padding-left: 1em;">10</td>
+        <td style="text-align:left;padding-left: 1em;">TACACAGTGA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">33-GTGACTCA</td>
+        <td style="text-align:right;padding-left: 1em;">8</td>
+        <td style="text-align:left;padding-left: 1em;">GTGACTCA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">34-AAATAAA</td>
+        <td style="text-align:right;padding-left: 1em;">7</td>
+        <td style="text-align:left;padding-left: 1em;">AAATAAA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">35-AGGAAG</td>
+        <td style="text-align:right;padding-left: 1em;">6</td>
+        <td style="text-align:left;padding-left: 1em;">AGGAAG</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">36-ACCCACACAG</td>
+        <td style="text-align:right;padding-left: 1em;">10</td>
+        <td style="text-align:left;padding-left: 1em;">ACCCACACAG</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">37-CATTTCCTC</td>
+        <td style="text-align:right;padding-left: 1em;">9</td>
+        <td style="text-align:left;padding-left: 1em;">CATTTCCTC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">38-AGGGCCAGCTCTMCTG</td>
+        <td style="text-align:right;padding-left: 1em;">16</td>
+        <td style="text-align:left;padding-left: 1em;">AGGGCCAGCTCTCCTG</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">39-CCTCTGGAAGAGCAGCMA</td>
+        <td style="text-align:right;padding-left: 1em;">18</td>
+        <td style="text-align:left;padding-left: 1em;">CCTCTGGAAGAGCAGCCA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">40-ACTCAGAGATC</td>
+        <td style="text-align:right;padding-left: 1em;">11</td>
+        <td style="text-align:left;padding-left: 1em;">ACTCAGAGATC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">41-CTTTTTAAAA</td>
+        <td style="text-align:right;padding-left: 1em;">10</td>
+        <td style="text-align:left;padding-left: 1em;">CTTTTTAAAA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">42-CTCCTCCC</td>
+        <td style="text-align:right;padding-left: 1em;">8</td>
+        <td style="text-align:left;padding-left: 1em;">CTCCTCCC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">43-GAGAAACCCTGTCTC</td>
+        <td style="text-align:right;padding-left: 1em;">15</td>
+        <td style="text-align:left;padding-left: 1em;">GAGAAACCCTGTCTC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">44-GCAAACA</td>
+        <td style="text-align:right;padding-left: 1em;">7</td>
+        <td style="text-align:left;padding-left: 1em;">GCAAACA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">45-AGGGCAGAGGT</td>
+        <td style="text-align:right;padding-left: 1em;">11</td>
+        <td style="text-align:left;padding-left: 1em;">AGGGCAGAGGT</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">46-CCMGGGTCA</td>
+        <td style="text-align:right;padding-left: 1em;">9</td>
+        <td style="text-align:left;padding-left: 1em;">CCAGGGTCA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">47-AAGCAAGC</td>
+        <td style="text-align:right;padding-left: 1em;">8</td>
+        <td style="text-align:left;padding-left: 1em;">AAGCAAGC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">48-CACGGGG</td>
+        <td style="text-align:right;padding-left: 1em;">7</td>
+        <td style="text-align:left;padding-left: 1em;">CACGGGG</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">49-RAAATCAAT</td>
+        <td style="text-align:right;padding-left: 1em;">9</td>
+        <td style="text-align:left;padding-left: 1em;">AAAATCAAT</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">50-TGTTGCAACA</td>
+        <td style="text-align:right;padding-left: 1em;">10</td>
+        <td style="text-align:left;padding-left: 1em;">TGTTGCAACA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">51-GCTGTCTTCAGACACA</td>
+        <td style="text-align:right;padding-left: 1em;">16</td>
+        <td style="text-align:left;padding-left: 1em;">GCTGTCTTCAGACACA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">52-ATTGAACTCAGGWCCTCTGG</td>
+        <td style="text-align:right;padding-left: 1em;">20</td>
+        <td style="text-align:left;padding-left: 1em;">ATTGAACTCAGGACCTCTGG</td>
+       </tr>
+    </tbody>
+  </table>
+</p>
+<p>
+Random model letter frequencies (/ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_mouse_enhancer/background):
+<br/>
+
+A 0.251 C 0.249 G 0.249 T 0.251 </p>
+</div>
+<hr>
+<center><big><b><a name="sec_i">SECTION I: HIGH-SCORING MOTIF OCCURENCES</a></b></big></center>
+<hr>
+<ul>
+<li>
+There were 0 motif occurences with a p-value less than 0.0001.
+
+The full set of motif occurences can be seen in the
+TSV (tab-delimited values) output file
+<a href="fimo.tsv">fimo.tsv</a>, 
+the GFF3 file 
+<a href="fimo.gff">fimo.gff</a> 
+which may be suitable for uploading to the 
+<a href="http://genome.ucsc.edu/cgi-bin/hgTables">UCSC Genome Table Browser</a>
+(assuming the FASTA input sequences included genomic coordinates in UCSC or Galaxy format),
+or the XML file 
+<a href="fimo.xml">fimo.xml</a>.
+</li>
+<li>
+The <i>p</i>-value of a motif occurrence is defined as the
+probability of a random sequence of the same length as the motif
+matching that position of the sequence with as good or better a score.
+</li>
+<li>
+The score for the match of a position in a sequence to a motif
+is computed by summing the appropriate entries from each column of
+the position-dependent scoring matrix that represents the motif.
+</li>
+<li>
+The q-value of a motif occurrence is defined as the
+false discovery rate if the occurrence is accepted as significant.
+</li>
+<li>The table is sorted by increasing <i>p</i>-value.</li>
+</ul>
+<table border="1">
+<thead>
+<tr>
+<th>Motif ID</th>
+<th>Alt ID</th>
+<th>Sequence Name</th>
+<th>Strand</th>
+<th>Start</th>
+<th>End</th>
+<th>p-value</th>
+<th>q-value</th>
+<th>Matched Sequence</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+<hr>
+<center><big><b><a name="debugging_information">DEBUGGING INFORMATION</a></b></big></center>
+<hr>
+<p>
+Command line:
+</p>
+<pre>
+fimo --parse-genomic-coord --verbosity 1 --oc /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_mouse_enhancer/fimo_out_15 --bgfile /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_mouse_enhancer/background --motif 18-AGATAA /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_mouse_enhancer/streme_out/streme.xml /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_mouse_enhancer/mouse_enhancer.fa
+</pre>
+<p>
+Settings:
+</p>
+<pre>
+<table>
+  <tr>
+    <td style="padding-right: 2em">output_directory = /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_mouse_enhancer/fimo_out_15</td>
+    <td style="padding-left: 5em; padding-right: 2em">MEME file name = /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_mouse_enhancer/streme_out/streme.xml</td>
+    <td style="padding-left: 5em; padding-right: 2em">sequence file name = /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_mouse_enhancer/mouse_enhancer.fa</td>
+  </tr>  <tr>
+    <td style="padding-right: 2em">background file name = /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_mouse_enhancer/background</td>
+    <td style="padding-left: 5em; padding-right: 2em">alphabet = DNA</td>
+    <td style="padding-left: 5em; padding-right: 2em">max stored scores = 100000</td>
+  </tr>  <tr>
+    <td style="padding-right: 2em">allow clobber = true</td>
+    <td style="padding-left: 5em; padding-right: 2em">compute q-values = true</td>
+    <td style="padding-left: 5em; padding-right: 2em">parse genomic coord. = true</td>
+  </tr>
+  <tr>
+    <td style="padding-right: 2em">text only = false</td>
+    <td style="padding-left: 5em; padding-right: 2em">scan both strands = true</td>
+    <td style="padding-left: 5em; padding-right: 2em">max strand = false</td>
+  </tr>
+  <tr>
+    <td style="padding-right: 2em">threshold type = p-value</td>
+    <td style="padding-left: 5em; padding-right: 2em">output theshold = 0.0001</td>
+    <td style="padding-left: 5em; padding-right: 2em">pseudocount = 0.1</td>
+  </tr>
+  <tr>
+    <td style="padding-right: 2em">alpha = 1</td>
+    <td style="padding-left: 5em; padding-right: 2em">verbosity = 1</td>
+    <td style="padding-left: 5em; padding-right: 2em"></td>
+  </tr>
+
+</table>
+</pre>
+<p>
+This information can be useful in the event you wish to report a
+problem with the FIMO software.
+</p>
+<hr>
+<span style="background-color: #DDDDFF"><a href="#top_buttons"><b>Go to top</b></a></span>
+</body>
+</html>

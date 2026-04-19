@@ -1,4 +1,0 @@
-category	total	promoter	enhancer	promoter_fraction	enhancer_fraction
-shared_open	   34439	   23036	   11403	0.6689	0.3311
-human_open_mouse_closed	   30876	    5454	   25422	0.1766	0.8234
-mouse_open_human_closed	   85382	   19617	   65765	0.2298	0.7702

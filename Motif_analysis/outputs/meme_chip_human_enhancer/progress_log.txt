@@ -1,0 +1,126 @@
+Invoking:
+  getsize /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/human_enhancer.fa 1> $metrics
+Finished invoke:
+  name: count_seqs  status: 0  time: 0.207122
+Invoking:
+  fasta-most -min 50 < /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/human_enhancer.fa 1> $metrics
+Finished invoke:
+  name: most_seqs  status: 0  time: 0.120955
+Invoking:
+  fasta-center -dna -len 100 < /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/human_enhancer.fa 1> /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/seqs-centered
+Finished invoke:
+  name: center_seqs  status: 0  time: 0.17206
+Invoking:
+  fasta-get-markov -nostatus -nosummary -dna -m 2 /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/human_enhancer.fa /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/background
+Finished invoke:
+  name: bg  status: 0  time: 0.051074
+Invoking:
+  meme /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/seqs-centered -oc /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/meme_out -mod zoops -nmotifs 10 -minw 6 -maxw 20 -bfile /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/background -dna -p 4 -revcomp -nostatus
+Finished invoke:
+  name: meme  status: 0  time: 917.441989
+Invoking:
+  streme --verbosity 1 --oc /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/streme_out -dna --p /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/seqs-centered --minw 6 --maxw 20 --order 2
+Finished invoke:
+  name: streme  status: 0  time: 3668.154711
+Invoking:
+  centrimo -seqlen 200 -verbosity 1 -oc /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/centrimo_out -bfile /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/background /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/human_enhancer.fa /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/meme_out/meme.xml /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/streme_out/streme.xml /ocean/projects/bio230007p/sujathab/motif_dbs/JASPAR2026_vertebrates_combined.meme
+Finished invoke:
+  name: centrimo  status: 256  time: 0.98221
+Invoking:
+  tomtom -verbosity 1 -oc /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/meme_tomtom_out -min-overlap 5 -dist pearson -evalue -thresh 1 -no-ssc /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/meme_out/meme.xml /ocean/projects/bio230007p/sujathab/motif_dbs/JASPAR2026_vertebrates_combined.meme
+Finished invoke:
+  name: meme_tomtom  status: 0  time: 21.929554
+Invoking:
+  tomtom -verbosity 1 -oc /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/streme_tomtom_out -min-overlap 5 -dist pearson -evalue -thresh 1 -no-ssc /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/streme_out/streme.xml /ocean/projects/bio230007p/sujathab/motif_dbs/JASPAR2026_vertebrates_combined.meme
+Finished invoke:
+  name: streme_tomtom  status: 0  time: 25.95812
+Invoking:
+  tomtom -verbosity 1 -text -thresh 0.1 /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/combined.meme /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/combined.meme 1> /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/motif_alignment.txt
+Finished invoke:
+  name: align  status: 0  time: 0.54029
+Invoking:
+  spamo -verbosity 1 -oc /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/spamo_out_1 -bgfile /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/background -keepprimary -primary RSYGCCMYCTRSTGG /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/human_enhancer.fa /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/meme_out/meme.xml /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/meme_out/meme.xml /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/streme_out/streme.xml
+Finished invoke:
+  name: spamo1  status: 256  time: 0.212757
+Invoking:
+  spamo -verbosity 1 -oc /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/spamo_out_1 -bgfile /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/background -keepprimary -primary TGTGTGTGTGTGTGTGTGTG /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/human_enhancer.fa /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/meme_out/meme.xml /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/meme_out/meme.xml /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/streme_out/streme.xml
+Finished invoke:
+  name: spamo1  status: 256  time: 0.225943
+Invoking:
+  spamo -verbosity 1 -oc /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/spamo_out_1 -bgfile /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/background -keepprimary -primary KGGGGGGGGGGGGGG /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/human_enhancer.fa /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/meme_out/meme.xml /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/meme_out/meme.xml /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/streme_out/streme.xml
+Finished invoke:
+  name: spamo1  status: 256  time: 0.234457
+Invoking:
+  spamo -verbosity 1 -oc /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/spamo_out_1 -bgfile /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/background -keepprimary -primary AAAAAAAAAAWAAAWAAAAA /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/human_enhancer.fa /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/meme_out/meme.xml /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/meme_out/meme.xml /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/streme_out/streme.xml
+Finished invoke:
+  name: spamo1  status: 256  time: 0.21233
+Invoking:
+  spamo -verbosity 1 -oc /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/spamo_out_1 -bgfile /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/background -keepprimary -primary YYCYYYCTYYCTYYCTYYCT /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/human_enhancer.fa /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/meme_out/meme.xml /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/meme_out/meme.xml /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/streme_out/streme.xml
+Finished invoke:
+  name: spamo1  status: 256  time: 0.230387
+Invoking:
+  spamo -verbosity 1 -oc /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/spamo_out_1 -bgfile /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/background -keepprimary -primary 2-AGGAARY /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/human_enhancer.fa /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/streme_out/streme.xml /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/meme_out/meme.xml /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/streme_out/streme.xml
+Finished invoke:
+  name: spamo1  status: 256  time: 0.219409
+Invoking:
+  spamo -verbosity 1 -oc /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/spamo_out_1 -bgfile /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/background -keepprimary -primary 4-AAAGCAAA /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/human_enhancer.fa /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/streme_out/streme.xml /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/meme_out/meme.xml /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/streme_out/streme.xml
+Finished invoke:
+  name: spamo1  status: 256  time: 0.217503
+Invoking:
+  spamo -verbosity 1 -oc /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/spamo_out_1 -bgfile /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/background -keepprimary -primary 5-RTAAATA /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/human_enhancer.fa /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/streme_out/streme.xml /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/meme_out/meme.xml /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/streme_out/streme.xml
+Finished invoke:
+  name: spamo1  status: 256  time: 0.198847
+Invoking:
+  spamo -verbosity 1 -oc /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/spamo_out_1 -bgfile /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/background -keepprimary -primary 7-AGAAACCCTGTCT /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/human_enhancer.fa /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/streme_out/streme.xml /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/meme_out/meme.xml /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/streme_out/streme.xml
+Finished invoke:
+  name: spamo1  status: 256  time: 0.212783
+Invoking:
+  spamo -verbosity 1 -oc /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/spamo_out_1 -bgfile /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/background -keepprimary -primary 8-CAAAGGTCA /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/human_enhancer.fa /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/streme_out/streme.xml /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/meme_out/meme.xml /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/streme_out/streme.xml
+Finished invoke:
+  name: spamo1  status: 256  time: 0.212875
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/fimo_out_1 --bgfile /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/background --motif RSYGCCMYCTRSTGG /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/meme_out/meme.xml /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/human_enhancer.fa
+Finished invoke:
+  name: fimo1  status: 0  time: 1.48006
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/fimo_out_2 --bgfile /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/background --motif TGTGTGTGTGTGTGTGTGTG /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/meme_out/meme.xml /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/human_enhancer.fa
+Finished invoke:
+  name: fimo2  status: 0  time: 1.55772
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/fimo_out_3 --bgfile /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/background --motif KGGGGGGGGGGGGGG /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/meme_out/meme.xml /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/human_enhancer.fa
+Finished invoke:
+  name: fimo3  status: 0  time: 1.462929
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/fimo_out_4 --bgfile /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/background --motif AAAAAAAAAAWAAAWAAAAA /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/meme_out/meme.xml /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/human_enhancer.fa
+Finished invoke:
+  name: fimo4  status: 0  time: 1.613033
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/fimo_out_5 --bgfile /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/background --motif YYCYYYCTYYCTYYCTYYCT /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/meme_out/meme.xml /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/human_enhancer.fa
+Finished invoke:
+  name: fimo5  status: 0  time: 1.66468
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/fimo_out_6 --bgfile /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/background --motif 2-AGGAARY /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/streme_out/streme.xml /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/human_enhancer.fa
+Finished invoke:
+  name: fimo6  status: 0  time: 1.370775
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/fimo_out_7 --bgfile /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/background --motif 4-AAAGCAAA /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/streme_out/streme.xml /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/human_enhancer.fa
+Finished invoke:
+  name: fimo7  status: 0  time: 1.427837
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/fimo_out_8 --bgfile /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/background --motif 5-RTAAATA /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/streme_out/streme.xml /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/human_enhancer.fa
+Finished invoke:
+  name: fimo8  status: 0  time: 1.357128
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/fimo_out_9 --bgfile /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/background --motif 7-AGAAACCCTGTCT /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/streme_out/streme.xml /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/human_enhancer.fa
+Finished invoke:
+  name: fimo9  status: 0  time: 1.462061
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/fimo_out_10 --bgfile /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/background --motif 8-CAAAGGTCA /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/streme_out/streme.xml /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/human_enhancer.fa
+Finished invoke:
+  name: fimo10  status: 0  time: 1.37617
+Writing output
+Invoking:
+  meme-chip_html_to_tsv /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/meme-chip.html /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer/summary.tsv "meme-chip -oc /ocean/projects/bio230007p/sujathab/Motif_analysis/output/meme_chip_human_enhancer -maxw 20 -meme-nmotifs 10 -meme-p 4 -db /ocean/projects/bio230007p/sujathab/motif_dbs/JASPAR2026_vertebrates_combined.meme /ocean/projects/bio230007p/sujathab/Motif_analysis/output/fastas/human_enhancer.fa" 5.4.1 "Sat Aug 21 19\:23\:23 2021 -0700"
+Finished invoke:
+  name: summary  status: 0  time: 0.106891
+Done

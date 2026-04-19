@@ -1,0 +1,16 @@
+# TRACE — Tool Requirements
+# All tools are available as modules on Bridges-2 (PSC)
+# For local installation, see README.md
+
+# Cluster modules
+bedtools >= 2.31.1
+MEME-suite == 5.4.1
+
+# R packages (install via BiocManager)
+R >= 4.0
+rGREAT >= 2.0
+ggplot2 >= 3.4.0
+
+# Conda environments
+# hal       — for HALPER (see https://github.com/pfenninglab/halLiftover-postprocessing)
+# rgreat_env — for R/rGREAT analysis
