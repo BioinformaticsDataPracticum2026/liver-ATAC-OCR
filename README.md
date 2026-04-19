@@ -276,6 +276,7 @@ liver-ATAC-OCR/
 - Lefebvre, P. et al. (2006). Sorting out the roles of PPARα in energy metabolism and vascular homeostasis. *Journal of Clinical Investigation* 116(3):571–580. https://doi.org/10.1172/JCI27989
 - Suske, G. (1999). The Sp-family of transcription factors. *Gene* 238(2):291–300. https://doi.org/10.1016/S0378-1119(99)00357-1
 - Golson, M.L. & Kaestner, K.H. (2016). Fox transcription factors: from development to disease. *Development* 143(24):4558–4570. https://doi.org/10.1242/dev.112672
+- Tetreault & Yang (2010) — "Krüppel-like factors in cancer." Journal of Cellular and Molecular Medicine 14(6a):1175–1187. https://doi.org/10.1111/j.1582-4934.2010.01054.x
 
 ---
 
