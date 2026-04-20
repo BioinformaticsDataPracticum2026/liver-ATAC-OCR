@@ -264,10 +264,10 @@ liver-ATAC-OCR/
 - Wahli, W. & Michalik, L. (2012). PPARs at the crossroads of lipid signaling and inflammation. *Trends in Endocrinology & Metabolism* 23(7):351–363. https://doi.org/10.1016/j.tem.2012.05.001
 - Rui, L. (2014). Energy Metabolism in the Liver. *Comprehensive Physiology* 4(1):177–197. https://doi.org/10.1002/cphy.c130024
 - Lu, S.C. (2009). Regulation of Glutathione Synthesis. *Molecular Aspects of Medicine* 30(1-2):42–59. https://doi.org/10.1016/j.mam.2008.05.005
-- Mark, M. et al. (2009). Retinoic Acid Signalling in Development. *Physiological Reviews* 89(2):843–884. https://doi.org/10.1152/physrev.00026.2008
+- Duester, G. (2008). "Retinoic Acid Synthesis and Signaling during Early Organogenesis." Cell 134(6):921–931. https://doi.org/10.1016/j.cell.2008.09.002
 - Blaner, W.S. et al. (2009). Hepatic stellate cell lipid droplets: A specialized lipid droplet for retinoid storage. *Biochimica et Biophysica Acta* 1791(6):467–473. https://doi.org/10.1016/j.bbalip.2008.11.001
 - Dzierzak, E. & Philipsen, S. (2013). Erythropoiesis: Development and Differentiation. *Cold Spring Harbor Perspectives in Medicine* 3(4). https://doi.org/10.1101/cshperspect.a011601
-- Tappy, L. & Lê, K.A. (2010) — "Metabolic Effects of Fructose and the Worldwide Increase in Obesity." Physiological Reviews 90(1):23–46. https://doi.org/10.1152/physrev.00019.2009
+- Tappy, L. & Lê, K.A. (2010). "Metabolic Effects of Fructose and the Worldwide Increase in Obesity." Physiological Reviews 90(1):23–46. https://doi.org/10.1152/physrev.00019.2009
 
 ### Biological interpretation — TF motifs
  
