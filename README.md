@@ -243,7 +243,16 @@ liver-ATAC-OCR/
 ---
 
 ## References
- 
+
+### General background
+- Amemiya, H.M. et al. (2019). The ENCODE Blacklist: Identification of Problematic Regions of the Genome. Scientific Reports 9, 9354.
+- Ji, Z. et al. (2020). Multi-scale chromatin state annotation using a hierarchical hidden Markov model. Biochim Biophys Acta Gene Regul Mech, 1863(6):194551.
+- Kaplow, I.M. et al. (2022). Relating enhancer genetic variation across mammals to complex phenotypes using linear mixed models. BMC Genomics 23, 307.
+- Landt, S.G. et al. (2012). ChIP-seq guidelines and practices of the ENCODE and modENCODE consortia. Genome Research 22, 1813–1831.
+- Langmead, B. & Salzberg, S.L. (2012). Fast gapped-read alignment with Bowtie 2. Nature Methods 9, 357–359.
+- Li, Q. et al. (2011). Measuring reproducibility of high-throughput experiments. Annals of Applied Statistics 5(3), 1752–1779.
+- Zhang, Y. et al. (2008). Model-based Analysis of ChIP-Seq (MACS). Genome Biology 9, R137.
+
 ### Tool papers
  
 - Diehl, A.G. et al. (2020). HALPER: a tool for cross-species liftover of ATAC-seq peaks. *Bioinformatics*. https://doi.org/10.1093/bioinformatics/btaa493
