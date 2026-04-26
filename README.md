@@ -109,14 +109,14 @@ ATAC-seq data from human and mouse liver and adrenal gland tissues were evaluate
 ### Task 2 — Cross-Species Liftover (HALPER)
  
 Human liver OCRs are mapped to the mouse genome using HALPER, which leverages whole-genome alignments from the Cactus HAL file. Each human OCR is assigned an orthologous region in the mouse genome. OCRs are then classified as: **shared** (ortholog is open in mouse), or **human-specific** (ortholog is closed in mouse). Mouse-native OCRs with no human ortholog are classified as **mouse-specific**.
- 
-### Task 3 — Biological Process Enrichment (rGREAT)
- 
-GO biological process enrichment is performed using rGREAT on five sets of OCRs: all human OCRs, all mouse OCRs, shared OCRs, human-specific OCRs, and mouse-specific OCRs. rGREAT assigns regions to nearby genes based on genomic distance and tests for overrepresented GO terms. Results are filtered at adjusted p-value < 0.05.
- 
-### Task 4 — Promoter / Enhancer Classification
+
+### Task 3 — Promoter / Enhancer Classification
  
 OCRs are classified as promoter-like or enhancer-like based on proximity to annotated transcription start sites (TSS ± 2 kb, from GENCODE vM15). Regions overlapping a TSS window are called promoters; all others are called enhancers. This classification is applied to shared, human-specific, and mouse-specific OCR sets.
+ 
+### Task 4 — Biological Process Enrichment (rGREAT)
+ 
+GO biological process enrichment is performed using rGREAT on five sets of OCRs: all human OCRs, all mouse OCRs, shared OCRs, human-specific OCRs, and mouse-specific OCRs. rGREAT assigns regions to nearby genes based on genomic distance and tests for overrepresented GO terms. Results are filtered at adjusted p-value < 0.05.
  
 ### Task 5 — Motif Analysis (MEME-ChIP)
  
@@ -161,9 +161,9 @@ bash scripts/TRACE_pipeline.sh \
 
 ```bash
 bash scripts/run_halper_mapping.sh     # Task 2: HALPER mapping
-bash scripts/run_pe_classification.sh  # Task 4: P/E classification
-bash scripts/run_rgreat.sh             # Task 3: rGREAT enrichment
-bash scripts/run_plots.sh              # Task 3: rGREAT plots
+bash scripts/run_pe_classification.sh  # Task 3: P/E classification
+bash scripts/run_rgreat.sh             # Task 4: rGREAT enrichment
+bash scripts/run_plots.sh              # Task 4: rGREAT plots
 bash scripts/run_motif_analysis.sh     # Task 5: Motif enrichment
 ```
 
@@ -230,65 +230,56 @@ liver-ATAC-OCR/
 ## Results
 Detailed results and biological interpretation for this study are available in the [Results README](Results/README.md).
 
+---
+
 ## References
 
-### General background
-- Amemiya, H.M. et al. (2019). The ENCODE Blacklist: Identification of Problematic Regions of the Genome. Scientific Reports 9, 9354.
-- Ji, Z. et al. (2020). Multi-scale chromatin state annotation using a hierarchical hidden Markov model. Biochim Biophys Acta Gene Regul Mech, 1863(6):194551.
-- Kaplow, I.M. et al. (2022). Relating enhancer genetic variation across mammals to complex phenotypes using linear mixed models. BMC Genomics 23, 307.
-- Landt, S.G. et al. (2012). ChIP-seq guidelines and practices of the ENCODE and modENCODE consortia. Genome Research 22, 1813–1831.
-- Langmead, B. & Salzberg, S.L. (2012). Fast gapped-read alignment with Bowtie 2. Nature Methods 9, 357–359.
-- Li, Q. et al. (2011). Measuring reproducibility of high-throughput experiments. Annals of Applied Statistics 5(3), 1752–1779.
-- Zhang, Y. et al. (2008). Model-based Analysis of ChIP-Seq (MACS). Genome Biology 9, R137.
-
-### Tool papers
- 
-- Diehl, A.G. et al. (2020). HALPER: a tool for cross-species liftover of ATAC-seq peaks. *Bioinformatics*. https://doi.org/10.1093/bioinformatics/btaa493
-- Quinlan, A.R. & Hall, I.M. (2010). BEDTools: a flexible suite of utilities for comparing genomic features. *Bioinformatics* 26(6):841–842. https://doi.org/10.1093/bioinformatics/btq033
-- McLean, C.Y. et al. (2010). GREAT improves functional interpretation of cis-regulatory regions. *Nature Biotechnology* 28, 495–501. https://doi.org/10.1038/nbt.1630
-- Gu, Z. & Hübschmann, D. (2023). rGREAT: an R/Bioconductor package for functional enrichment of genomic regions. *Bioinformatics* 39(1). https://doi.org/10.1093/bioinformatics/btac745
-- Machanick, P. & Bailey, T.L. (2011). MEME-ChIP: motif analysis of large DNA datasets. *Bioinformatics* 27(12):1696–1697. https://doi.org/10.1093/bioinformatics/btr189
-- Bailey, T.L. et al. (2015). The MEME Suite. *Nucleic Acids Research* 43(W1):W39–49. https://doi.org/10.1093/nar/gkv416
-
-### Cross-species regulatory conservation
- 
-- Villar, D. et al. (2015). Enhancer evolution across 20 mammalian species. *Cell* 160(3):554–566. https://doi.org/10.1016/j.cell.2015.01.006
-- Ballester, B. et al. (2014). Multi-species, multi-transcription factor binding highlights conserved control of tissue-specific biological pathways. *eLife* 3:e02626. https://doi.org/10.7554/eLife.02626
-- Yue, F. et al. (2014). A comparative encyclopedia of DNA elements in the mouse genome. *Nature* 515, 355–364. https://doi.org/10.1038/nature13992
-
-### Biological interpretation — GO terms
- 
-- Wahli, W. & Michalik, L. (2012). PPARs at the crossroads of lipid signaling and inflammation. *Trends in Endocrinology & Metabolism* 23(7):351–363. https://doi.org/10.1016/j.tem.2012.05.001
-- Rui, L. (2014). Energy Metabolism in the Liver. *Comprehensive Physiology* 4(1):177–197. https://doi.org/10.1002/cphy.c130024
-- Lu, S.C. (2009). Regulation of Glutathione Synthesis. *Molecular Aspects of Medicine* 30(1-2):42–59. https://doi.org/10.1016/j.mam.2008.05.005
-- Duester, G. (2008). "Retinoic Acid Synthesis and Signaling during Early Organogenesis." Cell 134(6):921–931. https://doi.org/10.1016/j.cell.2008.09.002
-- Blaner, W.S. et al. (2009). Hepatic stellate cell lipid droplets: A specialized lipid droplet for retinoid storage. *Biochimica et Biophysica Acta* 1791(6):467–473. https://doi.org/10.1016/j.bbalip.2008.11.001
-- Dzierzak, E. & Philipsen, S. (2013). Erythropoiesis: Development and Differentiation. *Cold Spring Harbor Perspectives in Medicine* 3(4). https://doi.org/10.1101/cshperspect.a011601
-- Tappy, L. & Lê, K.A. (2010). "Metabolic Effects of Fructose and the Worldwide Increase in Obesity." Physiological Reviews 90(1):23–46. https://doi.org/10.1152/physrev.00019.2009
-
-### Biological interpretation — TF motifs
- 
-- Ong, C.T. & Corces, V.G. (2014). CTCF: an architectural protein bridging genome topology and function. *Nature Reviews Genetics* 15, 234–246. https://doi.org/10.1038/nrg3663
-- Schmidt, D. et al. (2012). Waves of retrotransposon expansion remodel genome organization and CTCF binding in multiple mammalian lineages. *Cell* 148(1-2):335–348. https://doi.org/10.1016/j.cell.2011.11.058
-- Pawlak, M. et al. (2015). Molecular mechanism of PPARα action and its impact on lipid metabolism, inflammation and fibrosis in non-alcoholic fatty liver disease. *Journal of Hepatology* 62(3):720–733. https://doi.org/10.1016/j.jhep.2014.10.039
-- Lefebvre, P. et al. (2006). Sorting out the roles of PPARα in energy metabolism and vascular homeostasis. *Journal of Clinical Investigation* 116(3):571–580. https://doi.org/10.1172/JCI27989
-- Suske, G. (1999). The Sp-family of transcription factors. *Gene* 238(2):291–300. https://doi.org/10.1016/S0378-1119(99)00357-1
-- Golson, M.L. & Kaestner, K.H. (2016). Fox transcription factors: from development to disease. *Development* 143(24):4558–4570. https://doi.org/10.1242/dev.112672
-- McConnell & Yang (2010) — "Mammalian Krüppel-Like Factors in Health and Disease." Physiological Reviews 90(4):1337–1381. https://doi.org/10.1152/physrev.00058.2009
-- Hayhurst et al. (2001) — "Hepatocyte nuclear factor 4α is essential for maintenance of hepatic gene expression." Molecular and Cellular Biology 21(4):1393–1403. https://doi.org/10.1128/MCB.21.4.1393-1403.2001
-- Barish et al. (2006) — "PPARδ: a dagger in the heart of the metabolic syndrome." Journal of Clinical Investigation 116(3):590–597. https://doi.org/10.1172/JCI27955
-- Mangelsdorf & Evans (1995) — "The RXR heterodimers and orphan receptors." Cell 83(6):841–850. https://doi.org/10.1016/0092-8674(95)90200-7
-- Ramji & Foka (2002) — "CCAAT/enhancer-binding proteins: structure, function and regulation." Biochemical Journal 365(3):561–575. https://doi.org/10.1042/BJ20020508
-- Cereghini (1996) — "Liver-enriched transcription factors and hepatocyte differentiation." FASEB Journal 10(2):267–282. https://doi.org/10.1096/fasebj.10.2.8641560 ← this covers both HNF1B and the broader liver TF landscape, so it's efficient.
-
+1. Amemiya, H.M. et al. (2019). The ENCODE Blacklist: Identification of Problematic Regions of the Genome. Scientific Reports 9, 9354.
+2. Ji, Z. et al. (2020). Multi-scale chromatin state annotation using a hierarchical hidden Markov model. Biochim Biophys Acta Gene Regul Mech, 1863(6):194551.
+3. Kaplow, I.M. et al. (2022). Relating enhancer genetic variation across mammals to complex phenotypes using linear mixed models. BMC Genomics 23, 307.
+4. Landt, S.G. et al. (2012). ChIP-seq guidelines and practices of the ENCODE and modENCODE consortia. Genome Research 22, 1813–1831.
+5. Langmead, B. & Salzberg, S.L. (2012). Fast gapped-read alignment with Bowtie 2. Nature Methods 9, 357–359.
+6. Li, Q. et al. (2011). Measuring reproducibility of high-throughput experiments. Annals of Applied Statistics 5(3), 1752–1779.
+7. Zhang, Y. et al. (2008). Model-based Analysis of ChIP-Seq (MACS). Genome Biology 9, R137.
+8. Diehl, A.G. et al. (2020). HALPER: a tool for cross-species liftover of ATAC-seq peaks. *Bioinformatics*. https://doi.org/10.1093/bioinformatics/btaa493
+9. Quinlan, A.R. & Hall, I.M. (2010). BEDTools: a flexible suite of utilities for comparing genomic features. *Bioinformatics* 26(6):841–842. https://doi.org/10.1093/bioinformatics/btq033
+10. McLean, C.Y. et al. (2010). GREAT improves functional interpretation of cis-regulatory regions. *Nature Biotechnology* 28, 495–501. https://doi.org/10.1038/nbt.1630
+11. Gu, Z. & Hübschmann, D. (2023). rGREAT: an R/Bioconductor package for functional enrichment of genomic regions. *Bioinformatics* 39(1). https://doi.org/10.1093/bioinformatics/btac745
+12. Machanick, P. & Bailey, T.L. (2011). MEME-ChIP: motif analysis of large DNA datasets. *Bioinformatics* 27(12):1696–1697. https://doi.org/10.1093/bioinformatics/btr189
+13. Bailey, T.L. et al. (2015). The MEME Suite. *Nucleic Acids Research* 43(W1):W39–49. https://doi.org/10.1093/nar/gkv416
+14. Villar, D. et al. (2015). Enhancer evolution across 20 mammalian species. *Cell* 160(3):554–566. https://doi.org/10.1016/j.cell.2015.01.006
+15. Ballester, B. et al. (2014). Multi-species, multi-transcription factor binding highlights conserved control of tissue-specific biological pathways. *eLife* 3:e02626. https://doi.org/10.7554/eLife.02626
+16. Yue, F. et al. (2014). A comparative encyclopedia of DNA elements in the mouse genome. *Nature* 515, 355–364. https://doi.org/10.1038/nature13992
+17. Wahli, W. & Michalik, L. (2012). PPARs at the crossroads of lipid signaling and inflammation. *Trends in Endocrinology & Metabolism* 23(7):351–363. https://doi.org/10.1016/j.tem.2012.05.001
+18. Rui, L. (2014). Energy Metabolism in the Liver. *Comprehensive Physiology* 4(1):177–197. https://doi.org/10.1002/cphy.c130024
+19. Lu, S.C. (2009). Regulation of Glutathione Synthesis. *Molecular Aspects of Medicine* 30(1-2):42–59. https://doi.org/10.1016/j.mam.2008.05.005
+20. Duester, G. (2008). "Retinoic Acid Synthesis and Signaling during Early Organogenesis." Cell 134(6):921–931. https://doi.org/10.1016/j.cell.2008.09.002
+21. Blaner, W.S. et al. (2009). Hepatic stellate cell lipid droplets: A specialized lipid droplet for retinoid storage. *Biochimica et Biophysica Acta* 1791(6):467–473. https://doi.org/10.1016/j.bbalip.2008.11.001
+22. Dzierzak, E. & Philipsen, S. (2013). Erythropoiesis: Development and Differentiation. *Cold Spring Harbor Perspectives in Medicine* 3(4). https://doi.org/10.1101/cshperspect.a011601
+23. Tappy, L. & Lê, K.A. (2010). "Metabolic Effects of Fructose and the Worldwide Increase in Obesity." Physiological Reviews 90(1):23–46. https://doi.org/10.1152/physrev.00019.2009 
+24. Ong, C.T. & Corces, V.G. (2014). CTCF: an architectural protein bridging genome topology and function. *Nature Reviews Genetics* 15, 234–246. https://doi.org/10.1038/nrg3663
+25. Schmidt, D. et al. (2012). Waves of retrotransposon expansion remodel genome organization and CTCF binding in multiple mammalian lineages. *Cell* 148(1-2):335–348. https://doi.org/10.1016/j.cell.2011.11.058
+26. Pawlak, M. et al. (2015). Molecular mechanism of PPARα action and its impact on lipid metabolism, inflammation and fibrosis in non-alcoholic fatty liver disease. *Journal of Hepatology* 62(3):720–733. https://doi.org/10.1016/j.jhep.2014.10.039
+27. Lefebvre, P. et al. (2006). Sorting out the roles of PPARα in energy metabolism and vascular homeostasis. *Journal of Clinical Investigation* 116(3):571–580. https://doi.org/10.1172/JCI27989
+28. Suske, G. (1999). The Sp-family of transcription factors. *Gene* 238(2):291–300. https://doi.org/10.1016/S0378-1119(99)00357-1
+29. Golson, M.L. & Kaestner, K.H. (2016). Fox transcription factors: from development to disease. *Development* 143(24):4558–4570. https://doi.org/10.1242/dev.112672
+30. McConnell & Yang (2010) — "Mammalian Krüppel-Like Factors in Health and Disease." Physiological Reviews 90(4):1337–1381. https://doi.org/10.1152/physrev.00058.2009
+31. Hayhurst et al. (2001) — "Hepatocyte nuclear factor 4α is essential for maintenance of hepatic gene expression." Molecular and Cellular Biology 21(4):1393–1403. https://doi.org/10.1128/MCB.21.4.1393-1403.2001
+32. Barish et al. (2006) — "PPARδ: a dagger in the heart of the metabolic syndrome." Journal of Clinical Investigation 116(3):590–597. https://doi.org/10.1172/JCI27955
+33. Mangelsdorf & Evans (1995) — "The RXR heterodimers and orphan receptors." Cell 83(6):841–850. https://doi.org/10.1016/0092-8674(95)90200-7
+34. Ramji & Foka (2002) — "CCAAT/enhancer-binding proteins: structure, function and regulation." Biochemical Journal 365(3):561–575. https://doi.org/10.1042/BJ20020508
+35. Cereghini (1996) — "Liver-enriched transcription factors and hepatocyte differentiation." FASEB Journal 10(2):267–282. https://doi.org/10.1096/fasebj.10.2.8641560
 
 ---
 
 ## Contact
 
 **Evan Lin** - evanlin@andrew.cmu.edu
+
 **Arun Sujatha Bharath Raj** - asujatha@andrew.cmu.edu
+
 **Nikita Rajesh** - nrajesh@andrew.cmu.edu
+
 **Suratha Sriram** - surathas@andrew.cmu.edu
 
 ---
