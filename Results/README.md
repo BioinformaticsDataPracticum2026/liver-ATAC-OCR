@@ -23,7 +23,7 @@ Plots for the GO analysis are availbale in the [rGREAT Plots](../rGREAT/outputs/
 
 ### Top TF-matched MEME motif (left) and secondary motif (right) per OCR category. Letter height ∝ information content (bits).
 
-![Motif analysis](../Motif_analysis/images/Motif.png)\
+![Motif analysis](../Motif_analysis/images/Motif.png)
 
 ### Top MEME and STREME motif per OCR category (TomTom/JASPAR 2026 matches; q < 0.05).
 
