@@ -104,23 +104,6 @@ The pipeline addresses the following biological questions:
  
 ATAC-seq data from human and mouse liver and adrenal gland tissues were evaluated across seven QC metrics: % mapped reads, % properly paired reads, periodicity plots, TSS enrichment score, NRF, rescue ratio, and self-consistency ratio. The tissue with the highest-quality human and mouse datasets was selected for all downstream analyses.
  
-**Result:** Human liver and mouse liver passed all QC criteria and were selected for downstream analysis. Human adrenal gland failed the reproducibility test and was excluded.
- 
-#### QC Metrics Summary
- 
-| Metric | Threshold | Mouse Liver R1 | Mouse Liver R2 | Human Liver R1 | Human Liver R2 | Mouse Adrenal R1 | Mouse Adrenal R2 | Human Adrenal R1 | Human Adrenal R2 |
-|--------|-----------|---------------|---------------|----------------|----------------|-----------------|-----------------|-----------------|-----------------|
-| % Mapped Reads | ≥ 90% | ✅ 97.8 | ✅ 97.9 | ✅ 98.9 | ✅ 98.6 | ✅ 98.5 | ✅ 98.6 | ✅ 98.5 | ✅ 98.9 |
-| % Properly Paired | ≥ 90% | ✅ 95.7 | ✅ 95.6 | ✅ 97.9 | ✅ 97.5 | ✅ 94.6 | ✅ 94.7 | ✅ 97.0 | ✅ 97.5 |
-| Periodicity Plot | 3 clear humps | ✅ 3 humps | ✅ 3 humps | ✅ 3 humps | ✅ 3 humps | ⚠️ 2 humps | ⚠️ 2 humps | ⚠️ 2 humps | ⚠️ 2 humps |
-| TSS Enrichment | ≥ 10 | ⚠️ 7.69 | ⚠️ 7.35 | ✅ 23.29 | ✅ 20.96 | ✅ 18.37 | ✅ 19.00 | ✅ 26.08 | ✅ 14.01 |
-| NRF | > 0.8 | ✅ 0.936 | ✅ 0.944 | ✅ 0.885 | ✅ 0.900 | ❌ 0.302 | ❌ 0.270 | ⚠️ 0.778 | ✅ 0.970 |
-| Rescue Ratio | < 2 | ✅ 1.004 | ✅ 1.012 | ✅ 1.091 | ✅ 1.242 | ✅ 1.013 | ✅ 1.010 | ❌ 2.084 | ❌ 4.284 |
-| Self-consistency Ratio | < 2 | ✅ 1.076 | ✅ 1.104 | ✅ 1.219 | ✅ 1.428 | ✅ 1.222 | ✅ 1.289 | ❌ 3.604 | ❌ 6.270 |
-| Reproducibility | Pass | ✅ Pass | ✅ Pass | ✅ Pass | ✅ Pass | ✅ Pass | ✅ Pass | ❌ Fail | ❌ Fail |
- 
-> ✅ Passes threshold — ⚠️ Marginal — ❌ Fails threshold
- 
 ### Task 2 — Cross-Species Liftover (HALPER)
  
 Human liver OCRs are mapped to the mouse genome using HALPER, which leverages whole-genome alignments from the Cactus HAL file. Each human OCR is assigned an orthologous region in the mouse genome. OCRs are then classified as: **shared** (ortholog is open in mouse), or **human-specific** (ortholog is closed in mouse). Mouse-native OCRs with no human ortholog are classified as **mouse-specific**.
@@ -241,6 +224,9 @@ liver-ATAC-OCR/
 ```
 
 ---
+
+## Results
+Detailed results and biological interpretation for this study are available in the [Results README](Results/README.md).
 
 ## References
 

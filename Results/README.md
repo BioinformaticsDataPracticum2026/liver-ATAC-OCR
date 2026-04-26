@@ -1,17 +1,6 @@
-# Quality Control Analysis of ATAC-seq Data of Mouse and Human Tissues
+# Results
 
-## Metrics Identified for QC Analysis:
-
-1. **% Mapped Reads** - Should be higher (~90% or more) for good quality data.
-2. **% Properly Paired Reads** - Should be higher (~90% or more) for good quality data.
-3. **Periodicity plots** - Should show three clear, distinct humps for good quality data, indicating nucleosome structure.
-4. **TSS-Enrichment Score** - Should be higher (>=10) for good quality data.
-5. **NRF (Non-Redundant Fraction)** - Should be higher (>0.8) for good quality data.
-6. **IDR (Irreproducible Discovery Rate)** - Should contain peaks that are reproducible across replicates for good quality data. Reproducible peaks = Strong peaks that are present in both replicates, and not just in one replicate. The reproducibility is measured by;
-    1. **Rescue Ratio** - Should be lower (<2) for good quality data.
-    2. **Self-consistency Ratio** - Should be lower (<2) for good quality data.
-
-## QC Analysis Results:
+## QC Analysis
 
 | Metric | Mouse Liver Replicate 1 | Mouse Liver Replicate 2 | Human Liver Replicate 1 | Human Liver Replicate 2 | Mouse Adrenal Gland Replicate 1 | Mouse Adrenal Gland Replicate 2 | Human Adrenal Gland Replicate 1 | Human Adrenal Gland Replicate 2 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -24,12 +13,13 @@
 | Self-consistency Ratio | $\color{green}1.0756982081825852$ | $\color{green}1.1043673083661616$ | $\color{green}1.2192105681999046$ | $\color{green}1.4284339019600292$ | $\color{green}1.2220589050973432$ | $\color{green}1.2891362811933205$ | $\color{red}3.6038942470169237$ | $\color{red}6.26995057660626$ |
 | Reproducibility Test | $\color{green}\text{Pass}$ | $\color{green}\text{Pass}$ | $\color{green}\text{Pass}$ | $\color{green}\text{Pass}$ | $\color{green}\text{Pass}$ | $\color{green}\text{Pass}$ | $\color{red}\text{Fail}$ | $\color{red}\text{Fail}$ |
 
-## Conclusion:
+> \color{green} =  Passes threshold — \color{yellow} = Marginal — \color{red} = Fails threshold
 
-Based on the QC metrics evaluated, the mouse liver and human liver samples show good quality data with high % mapped reads, high % properly paired reads, clear periodicity plots, high TSS-enrichment scores, high NRF values, low rescue ratios, and low self-consistency ratios. Both replicates for mouse liver and human liver passed the reproducibility test.
+## rGREAT Analysis
 
-In contrast, the mouse adrenal gland samples show moderate quality data with slightly lower % mapped reads and % properly paired reads, less clear periodicity plots, moderate TSS-enrichment scores, low NRF values, and higher rescue ratios and self-consistency ratios. Both replicates for mouse adrenal gland passed the reproducibility test.
 
-The human adrenal gland samples show poor quality data with high % mapped reads and % properly paired reads, but less clear periodicity plots, moderate TSS-enrichment scores, variable NRF values, and very high rescue ratios and self-consistency ratios. Both replicates for human adrenal gland failed the reproducibility test.
 
-Overall, the mouse liver and human liver samples have the best quality data among the four tissue types analyzed, while the human adrenal gland samples have the poorest quality data.
+## MEME-ChIP Analysis
+
+### Top TF-matched MEME motif (left) and secondary motif (right) per OCR category. Letter height ∝ information content (bits). Rank tag in corner; TF matched via TomTom/JASPAR 2026 [Only known motifs]
+![Motif analysis](Motif_analysis/images/Motif.png)
