@@ -17,7 +17,7 @@
 
 ## rGREAT Analysis
 
-Plots for the GO analysis are availbale in the [rGREAT Plots](../rGREAT/outputs/plots) directory.
+Plots for the GO analysis are availbale in the [rGREAT Plots](../rGREAT_Analysis/outputs/plots) directory.
 
 ## MEME-ChIP Analysis
 
