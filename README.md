@@ -61,6 +61,7 @@ For HALPER and rGREAT, set up once:
 # rGREAT - install inside your R environment
 conda activate rgreat_env
 Rscript -e "BiocManager::install('rGREAT')"
+Rscript -e "BiocManager::install('org.Mm.eg.db')"
 ```
 
 Then clone the repo:
@@ -80,6 +81,7 @@ conda install -c bioconda bedtools
 
 # rGREAT (in R)
 RScript -e "BiocManager::install('rGREAT')"
+RScript -e "BiocManager::install('org.Mm.eg.db')"
 
 # HALPER
 # Follow instructions at: https://github.com/pfenninglab/halLiftover-postprocessing
