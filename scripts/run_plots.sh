@@ -12,6 +12,8 @@
 #SBATCH --mail-type=BEGIN,END,FAIL
 #SBATCH --mail-user=surathas@andrew.cmu.edu
 
-cd /ocean/projects/bio230007p/ssriram6/liver-ATAC-OCR
+REPO_ROOT="/ocean/projects/bio230007p/ssriram6/liver-ATAC-OCR" 
+
+cd "${REPO_ROOT}"
 source activate rgreat_env
-Rscript rGREAT_Analysis/scripts/rgreat_plots.R
+Rscript rGREAT_Analysis/scripts/rgreat_plots.R "${REPO_ROOT}"  
