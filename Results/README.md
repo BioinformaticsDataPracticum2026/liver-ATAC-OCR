@@ -22,4 +22,4 @@
 ## MEME-ChIP Analysis
 
 ### Top TF-matched MEME motif (left) and secondary motif (right) per OCR category. Letter height ∝ information content (bits). Rank tag in corner; TF matched via TomTom/JASPAR 2026 [Only known motifs]
-![Motif analysis](Motif_analysis/images/Motif.png)
+![Motif analysis](../Motif_analysis/images/Motif.png)
