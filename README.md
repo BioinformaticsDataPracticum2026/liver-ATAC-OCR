@@ -64,6 +64,12 @@ Rscript -e "BiocManager::install('rGREAT')"
 Rscript -e "BiocManager::install('org.Mm.eg.db')"
 ```
 
+For Motif analysis:
+
+# JASPAR motif database — download once
+wget https://jaspar.elixir.no/download/data/2026/CORE/JASPAR2026_CORE_vertebrates_non-redundant_pfms_meme.txt \
+  -O /path/to/motif_dbs/JASPAR2026_vertebrates_combined.meme
+
 Then clone the repo:
 
 ```bash
@@ -151,6 +157,8 @@ MEME-ChIP is run on FASTA sequences extracted from seven OCR sets: human enhance
 
 ### Run the full pipeline (Tasks 2-5)
 
+> **Note:** Always run from the repo root directory, not from inside `scripts/`.
+
 ```bash
 bash scripts/TRACE_pipeline.sh \
     --human /path/to/human_liver.narrowPeak.gz \
@@ -189,6 +197,8 @@ bash scripts/run_rgreat.sh             # Task 4: rGREAT enrichment
 bash scripts/run_plots.sh              # Task 4: rGREAT plots
 bash scripts/run_motif_analysis.sh     # Task 5: Motif enrichment
 ```
+
+> Individual scripts are designed to be submitted as SLURM jobs via `sbatch`. The full pipeline (`TRACE_pipeline.sh`) can be run with `bash` directly.
 
 ### External tool documentation
 
