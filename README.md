@@ -102,6 +102,8 @@ The pipeline addresses the following biological questions:
 - What biological processes are regulated by shared vs. species-specific OCRs?
 - How does the regulatory code (TF motifs) differ between species, and between enhancers and promoters?
 
+![Pipeline schematic](docs/Pipeline.png)
+
 ### Task 1 — Quality Control
  
 ATAC-seq data from human and mouse liver and adrenal gland tissues were evaluated across seven QC metrics: % mapped reads, % properly paired reads, periodicity plots, TSS enrichment score, NRF, rescue ratio, and self-consistency ratio. The tissue with the highest-quality human and mouse datasets was selected for all downstream analyses.
