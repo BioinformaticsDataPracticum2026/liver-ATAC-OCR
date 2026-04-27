@@ -1,12 +1,18 @@
 #!/usr/bin/bash
+# Submit from the repo root so relative log paths resolve correctly:
+#   sbatch run_motif_analysis.sh
+#
+# Override external resource paths at submit time if needed, e.g.:
+#   MM10_GENOME=/path/to/mm10.fa JASPAR_DB=/path/to/db.meme sbatch run_motif_analysis.sh
+
 #SBATCH -J motif_analysis     # Job name
 #SBATCH -p RM-shared          # Partition
 #SBATCH -N 1                  # Number of nodes
 #SBATCH --cpus-per-task=16     # Number of tasks (CPUs)
 #SBATCH -t 24:00:00           # Walltime (hh:mm:ss)
 #SBATCH --mem=30G             # Memory
-#SBATCH -o /ocean/projects/bio230007p/sujathab/Motif_analysis/logs/task5_motif_%j.out
-#SBATCH -e /ocean/projects/bio230007p/sujathab/Motif_analysis/logs/task5_motif_%j.err
+#SBATCH -o logs/task5_motif_%j.out
+#SBATCH -e logs/task5_motif_%j.err
 
 set -euo pipefail
 
@@ -14,7 +20,11 @@ module purge
 module load bedtools
 module load MEME-suite/5.4.1
 
-ROOT="/ocean/projects/bio230007p/sujathab"
+# Derive the repo root from the script's own location so the script works
+# for any user without modification.
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ROOT="${ROOT:-$SCRIPT_DIR}"
+
 PE_OUT="$ROOT/PE_classification/output"
 ROWCOUNT="$PE_OUT/rowcount"
 UNIQUE="$PE_OUT/unique"
@@ -23,11 +33,13 @@ OUT="$ROOT/Motif_analysis/output"
 BEDS="$OUT/beds"
 FASTAS="$OUT/fastas"
 
-MM10_GENOME="/ocean/projects/bio230007p/sujathab/mm10.fa"
-JASPAR_DB="/ocean/projects/bio230007p/sujathab/motif_dbs/JASPAR2026_vertebrates_combined.meme"
+# External resources: honour env-var overrides, fall back to conventional
+# locations inside the repo root.
+MM10_GENOME="${MM10_GENOME:-$ROOT/mm10.fa}"
+JASPAR_DB="${JASPAR_DB:-$ROOT/motif_dbs/JASPAR2026_vertebrates_combined.meme}"
 WINDOW=100
 
-mkdir -p "$BEDS" "$FASTAS" "$OUT/logs"
+mkdir -p "$BEDS" "$FASTAS" "$OUT/logs" "$ROOT/Motif_analysis/logs"
 
 echo "Performing Motif Analysis"
 echo "Root:       $ROOT"
