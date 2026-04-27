@@ -40,7 +40,7 @@ set -euo pipefail
 # Defaults
 # -----------------------------------------------------------------------
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
+ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 
 HUMAN_PEAKS=""
 MOUSE_PEAKS=""
