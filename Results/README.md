@@ -29,12 +29,12 @@ Plots for the GO analysis are availbale in the [rGREAT Plots](../rGREAT_Analysis
 
 | OCR Category | Top MEME motif | MEME E-value | Top STREME motif | STREME E-value |
 | --- | --- | --- | --- | --- |
-| Shared enhancers | CTCF (MA0139.2) | 8.8×10-461 | CTCF/KLF4 | 1.3×10-42 |
-| Human enhancers | CTCF (MA0139.2) | 4.3×10-116 | CTCF | 4.6×10-60 |
-| Human-specific enhancers | poly-T (MA2593.1) | 1.5×10-55 | CTCF/KLF4 | 3.4×10-13 |
-| Human promoters | SP/KLF;KLF8 (MA2681.1) | 3.3×10-74 | KLF8/ NF-Y/ZNF143 | 7.6×10-13 |
-| Mouse enhancers | CTCF (MA1929.2) | 1.2×10-184 | CTCF/PPARδ/FOXC2 | 3.3×10-146 |
-| Mouse-specific enhancers | CTCF (MA0139.2) | 1.1×10-182 | CTCF/PPARα::RXRα/FOXD3 | 3.2×10-96 |
-| Mouse promoters | SP/KLF;CTCF (MA0139.2) | 2.8×10-37 | KLF8/CTCF/PPARδ | 7.0×10-12 |
+| Shared enhancers | CTCF (MA0139.2) | 8.8×10^-461 | CTCF/KLF4 | 1.3×10^-42 |
+| Human enhancers | CTCF (MA0139.2) | 4.3×10^-116 | CTCF | 4.6×10^-60 |
+| Human-specific enhancers | poly-T (MA2593.1) | 1.5×10^-55 | CTCF/KLF4 | 3.4×10^-13 |
+| Human promoters | SP/KLF;KLF8 (MA2681.1) | 3.3×10^-74 | KLF8/ NF-Y/ZNF143 | 7.6×10^-13 |
+| Mouse enhancers | CTCF (MA1929.2) | 1.2×10^-184 | CTCF/PPARδ/FOXC2 | 3.3×10^-146 |
+| Mouse-specific enhancers | CTCF (MA0139.2) | 1.1×10^-182 | CTCF/PPARα::RXRα/FOXD3 | 3.2×10^-96 |
+| Mouse promoters | SP/KLF;CTCF (MA0139.2) | 2.8×10^-37 | KLF8/CTCF/PPARδ | 7.0×10^-12 |
 
 
