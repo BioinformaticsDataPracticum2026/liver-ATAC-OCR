@@ -130,25 +130,24 @@ MEME-ChIP is run on FASTA sequences extracted from seven OCR sets: human enhance
 
 ### Inputs
 
-| Input Filename | Step | Description |
-|----------------|------|-------------|
-| `human_liver.narrowPeak.gz` | Task 2 | Human liver OCRs |
-| `mouse_liver.narrowPeak.gz` | Task 2 | Mouse liver OCRs |
-| `10plusway-master.hal` | Task 2 | HAL alignment file for liftover |
-| `gencode.vM15.annotation.protTranscript.` | | |
-`geneNames_TSSWithStrand_sorted.bed` | Task 3 | TSS annotation file |
-| `human_liver.HumanToMouse.HALPER.narrowPeak.gz` | Task 3 | HALPER liftover output (human OCRs mapped to mouse) |
-| `idr.conservative_peak.narrowPeak.gz` | Task 3 | Mouse Peak file |
-| `human_liver.narrowPeak` | Task 4 | Human OCRs for rGREAT |
-| `mouse_liver.narrowPeak` | Task 4 | Mouse OCRs for rGREAT |
-| `shared_open.bed` | Task 4 | Shared OCRs for rGREAT |
-| `human_open_mouse_closed.bed` | Task 4 | Human-specific OCRs for rGREAT |
-| `mouse_open_human_closed.bed` | Task 4 | Mouse-specific OCRs for rGREAT |
-| `shared_enhancer.bed` | Task 5 | Shared enhancer OCRs for motif analysis |
-| `human_specific_enhancer.bed` | Task 5 | Human-specific enhancer OCRs for motif analysis |
-| `mouse_specific_enhancer.bed` | Task 5 | Mouse-specific enhancer OCRs for motif analysis |
-| `mm10.fa` | Task 5 | mm10 genome FASTA |
-| `JASPAR2026_vertebrates_combined.meme` | Task 5 | JASPAR motif database for MEME-ChIP |
+| File | Task | Description |
+|------|------|-------------|
+| `human_liver.narrowPeak.gz` | 2 | Human liver OCRs |
+| `mouse_liver.narrowPeak.gz` | 2 | Mouse liver OCRs |
+| `10plusway-master.hal` | 2 | HAL alignment for liftover |
+| `gencode.vM15...TSSWithStrand_sorted.bed` | 3 | TSS annotation |
+| `human_liver.HumanToMouse.HALPER.narrowPeak.gz` | 3 | HALPER liftover output |
+| `idr.conservative_peak.narrowPeak.gz` | 3 | Mouse peak file |
+| `human_liver.narrowPeak` | 4 | Human OCRs |
+| `mouse_liver.narrowPeak` | 4 | Mouse OCRs |
+| `shared_open.bed` | 4 | Shared OCRs |
+| `human_open_mouse_closed.bed` | 4 | Human-specific OCRs |
+| `mouse_open_human_closed.bed` | 4 | Mouse-specific OCRs |
+| `shared_enhancer.bed` | 5 | Shared enhancer OCRs |
+| `human_specific_enhancer.bed` | 5 | Human-specific enhancer OCRs |
+| `mouse_specific_enhancer.bed` | 5 | Mouse-specific enhancer OCRs |
+| `mm10.fa` | 5 | mm10 genome FASTA |
+| `JASPAR2026_vertebrates_combined.meme` | 5 | JASPAR motif database |
 
 ### Run the full pipeline (Tasks 2-5)
 
