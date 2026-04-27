@@ -135,7 +135,7 @@ MEME-ChIP is run on FASTA sequences extracted from seven OCR sets: human enhance
 | `human_liver.narrowPeak.gz` | Task 2 | Human liver OCRs |
 | `mouse_liver.narrowPeak.gz` | Task 2 | Mouse liver OCRs |
 | `10plusway-master.hal` | Task 2 | HAL alignment file for liftover |
-| `gencode.vM15.annotation.protTranscript.geneNames_TSSWithStrand_sorted.bed` | Task 3 | TSS annotation file |
+| ```gencode.vM15.annotation.protTranscript\n.geneNames_TSSWithStrand_sorted.bed``` | Task 3 | TSS annotation file |
 | `human_liver.HumanToMouse.HALPER.narrowPeak.gz` | Task 3 | HALPER liftover output (human OCRs mapped to mouse) |
 | `idr.conservative_peak.narrowPeak.gz` | Task 3 | Mouse Peak file |
 | `human_liver.narrowPeak` | Task 4 | Human OCRs for rGREAT |
