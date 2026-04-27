@@ -128,6 +128,27 @@ MEME-ChIP is run on FASTA sequences extracted from seven OCR sets: human enhance
 
 ## Usage
 
+### Inputs
+
+| Input Filename | Step | Description |
+|----------------|------|-------------|
+| `human_liver.narrowPeak.gz` | Task 2 | Human liver OCRs |
+| `mouse_liver.narrowPeak.gz` | Task 2 | Mouse liver OCRs |
+| `10plusway-master.hal` | Task 2 | HAL alignment file for liftover |
+| `gencode.vM15.annotation.protTranscript.geneNames_TSSWithStrand_sorted.bed` | Task 3 | TSS annotation file |
+| `human_liver.HumanToMouse.HALPER.narrowPeak.gz` | Task 3 | HALPER liftover output (human OCRs mapped to mouse) |
+| `idr.conservative_peak.narrowPeak.gz` | Task 3 | Mouse Peak file |
+| `human_liver.narrowPeak` | Task 4 | Human OCRs for rGREAT |
+| `mouse_liver.narrowPeak` | Task 4 | Mouse OCRs for rGREAT |
+| `shared_open.bed` | Task 4 | Shared OCRs for rGREAT |
+| `human_open_mouse_closed.bed` | Task 4 | Human-specific OCRs for rGREAT |
+| `mouse_open_human_closed.bed` | Task 4 | Mouse-specific OCRs for rGREAT |
+| `shared_enhancer.bed` | Task 5 | Shared enhancer OCRs for motif analysis |
+| `human_specific_enhancer.bed` | Task 5 | Human-specific enhancer OCRs for motif analysis |
+| `mouse_specific_enhancer.bed` | Task 5 | Mouse-specific enhancer OCRs for motif analysis |
+| `mm10.fa` | Task 5 | mm10 genome FASTA |
+| `JASPAR2026_vertebrates_combined.meme` | Task 5 | JASPAR motif database for MEME-ChIP |
+
 ### Run the full pipeline (Tasks 2-5)
 
 ```bash
@@ -135,9 +156,9 @@ bash scripts/TRACE_pipeline.sh \
     --human /path/to/human_liver.narrowPeak.gz \
     --mouse /path/to/mouse_liver.narrowPeak.gz \
     --hal /path/to/10plusway-master.hal \
-    --tss /path/to/gencode.vM15.TSSWithStrand_sorted.bed \
-    --genome /path/to/mma.fa \
-    --jaspar /path/to/JASPAR2026_vertebrates.meme
+    --tss /path/to/gencode.vM15.annotation.protTranscript.geneNames_TSSWithStrand_sorted.bed \
+    --genome /path/to/mm10.fa \
+    --jaspar /path/to/JASPAR2026_vertebrates_combined.meme
 ```
 
 ### Available flags
@@ -226,11 +247,6 @@ liver-ATAC-OCR/
 ├── .gitignore
 └── LICENSE
 ```
-
----
-
-## Results
-Detailed results and biological interpretation for this study are available in the [Results README](Results/README.md).
 
 ---
 
