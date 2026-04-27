@@ -15,6 +15,15 @@
 
 > $\color{green}\text{Green}$ =  Passes threshold — $\color{yellow}\text{Yellow}$ = Marginal — $\color{red}\text{Red}$ = Fails threshold
 
+## HALPER Analysis
+
+| Category                  | Number of Peaks |
+|---------------------------|-----------------|
+| Human OCRs                | 128,816         |
+| Mouse OCRs                | 264,873         |
+| Shared (halLiftover)      | 3,508,003       |
+| Shared (HALPER)           | 65,315          |
+
 ## rGREAT Analysis
 
 Plots for the GO analysis are availbale in the [rGREAT Plots](../rGREAT_Analysis/outputs/plots) directory.

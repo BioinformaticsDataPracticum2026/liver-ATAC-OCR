@@ -31,7 +31,7 @@ Carnegie Mellon University
 | Tool | Version | Purpose |
 |------|---------|---------|
 | [HALPER](https://github.com/pfenninglab/halLiftover-postprocessing) | - | Cross-species liftover of OCRs |
-| ↳ Python 3 *(via `hal` conda env)* | ≥ 3.6 | Required internally by HALPER - see [HAPLER installation](https://github.com/pfenninglab/halLiftover-postprocessing) |
+| ↳ Python 3 *(via `hal` conda env)* | ≥ 3.6 | Required internally by HALPER - see [HALPER installation](https://github.com/pfenninglab/halLiftover-postprocessing) |
 | [bedtools](https://bedtools.readthedocs.io/en/latest/) | ≥ 2.31 | Genomic interval operations |
 | [rGREAT](https://github.com/jokergoo/rGREAT) | ≥ 2.0 | GO enrichment analysis of genomic regions |
 | [ggplot2](https://ggplot2.tidyverse.org/) | ≥ 3.3 | Visualization of rGREAT results |
@@ -116,7 +116,7 @@ ATAC-seq data from human and mouse liver and adrenal gland tissues were evaluate
  
 ### Task 2 — Cross-Species Liftover (HALPER)
  
-Human liver OCRs are mapped to the mouse genome using HALPER, which leverages whole-genome alignments from the Cactus HAL file. Each human OCR is assigned an orthologous region in the mouse genome. OCRs are then classified as: **shared** (ortholog is open in mouse), or **human-specific** (ortholog is closed in mouse). Mouse-native OCRs with no human ortholog are classified as **mouse-specific**.
+Human liver OCRs are projected onto the mouse genome using halLiftover with whole-genome alignments from a Cactus HAL file. HALPER is applied to filter and resolve mappings, producing orthologous regions. Overlap with mouse OCRs is then used to determine whether orthologous regions are accessible.
 
 ### Task 3 — Promoter / Enhancer Classification
  
