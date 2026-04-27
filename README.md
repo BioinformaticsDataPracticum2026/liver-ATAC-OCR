@@ -66,9 +66,11 @@ Rscript -e "BiocManager::install('org.Mm.eg.db')"
 
 For Motif analysis:
 
+```bash
 # JASPAR motif database — download once
 wget https://jaspar.elixir.no/download/data/2026/CORE/JASPAR2026_CORE_vertebrates_non-redundant_pfms_meme.txt \
   -O /path/to/motif_dbs/JASPAR2026_vertebrates_combined.meme
+```
 
 Then clone the repo:
 
