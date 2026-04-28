@@ -11,8 +11,8 @@
 #SBATCH --cpus-per-task=16     # Number of tasks (CPUs)
 #SBATCH -t 24:00:00           # Walltime (hh:mm:ss)
 #SBATCH --mem=30G             # Memory
-#SBATCH -o logs/task5_motif_%j.out
-#SBATCH -e logs/task5_motif_%j.err
+#SBATCH -o Motif_analysis/logs/task5_motif_%j.out
+#SBATCH -e Motif_analysis/logs/task5_motif_%j.err
 
 set -euo pipefail
 
@@ -22,14 +22,13 @@ module load MEME-suite/5.4.1
 
 # Derive the repo root from the script's own location so the script works
 # for any user without modification.
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-ROOT="${ROOT:-$SCRIPT_DIR}"
+ROOT="${ROOT:-${SLURM_SUBMIT_DIR:-$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)}}"
 
-PE_OUT="$ROOT/PE_classification/output"
+PE_OUT="$ROOT/PE_classification/outputs"
 ROWCOUNT="$PE_OUT/rowcount"
 UNIQUE="$PE_OUT/unique"
 
-OUT="$ROOT/Motif_analysis/output"
+OUT="$ROOT/Motif_analysis/outputs"
 BEDS="$OUT/beds"
 FASTAS="$OUT/fastas"
 
