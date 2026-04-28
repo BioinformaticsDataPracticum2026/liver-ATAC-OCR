@@ -7,7 +7,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
-#SBATCH --mem=16G
+#SBATCH --mem=15000M
 # SBATCH --account=YOUR_BRIDGES2_ALLOCATION
 
 set -euo pipefail
